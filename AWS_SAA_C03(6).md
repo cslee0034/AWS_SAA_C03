@@ -35,3 +35,41 @@ Elastic Container Registry의 약자로 Docker 컨테이너 이미지를 저장,
 Elastic Kubernetes Service의 약자로 AWS에서 제공하는 관리형 Kubernetes 클러스터 서비스이다.
 
 - ECS와 유사하지만 다른 API를 사용한다. (오픈소스)
+
+## Node Types
+
+### Managed Node Groups
+
+- 자동으로 EC2 인스턴스 노드를 생성한다.
+
+- 노드는 EKS에 의해 관리되는 ASG의 일부이다.
+
+- On-Demand or Spot Instances 지원
+
+### Self-Managed Nodes
+
+- 노드는 사용자에 의해 생성되고 EKS에 등록된다. 이후 ASG에 의해 관리된다.
+
+- EKS에 최적화된 AMI를 미리 빌드할 수 있다.
+
+- On-Demand or Spot Instances 지원
+
+### AWS Fargate
+
+- 노드를 관리하지 않는다.
+
+## Data Volumes
+
+- Container Storage Interface(CSI)를 준수하는 드라이버를 사용해야 한다.
+
+- EKS에 StorageClass manifest를 확정해야 한다.
+
+- EBS, EFS (works with Fargate), FSx for Lustre, FSx for NetApp ONTAP를 지원한다.
+
+# App Runner
+
+![App_Runner](./pictures/App_Runner.png)
+
+코드 저장소에서 앱 소스를 가져와 자동화된 빌드 및 배포 프로세스로 서버리스 어플리케이션을 배포할 수 있는 완전 관리형 서비스
+
+- Docker 컨테이너 혹은 코드를 가지고 vCPU나 RAN, Auto Sacleing, Health Check 등의 설정을 하면 다음 작업은 자동으로 수행된다.
