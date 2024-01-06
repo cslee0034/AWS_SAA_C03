@@ -94,6 +94,16 @@ AWS의 독점 기술로, 클라우드에 최적화된 RDB의 일종이다.
 
 - 재해 복구를 위해 사용된다.
 
+# DynamoDB
+
+![DynamoDB](./pictures/DynamoDB.png)
+
+완전 관리형 NoSQL 데이터베이스.
+
+- Provisioned Mode(default): 초당 읽기, 쓰기 수를 명시할 수 있다. auto-scaling mode를 더할 수 있다.
+
+- On-Demand mode: Read/Write는 부하에 따라 자동으로 증감한다. 예측이 불가능할 때 좋다.
+
 # ElastiCache
 
 ![ElastiCache](./pictures/ElastiCache.png)
