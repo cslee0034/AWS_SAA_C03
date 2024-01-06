@@ -70,9 +70,17 @@ Multi Factor Authentication의 약자로, password와 security device를 조합�
 
 사용자에게 웹 또는 모바일 앱과 상호작용할 수 있는 ID를 제공하는 서비스.
 
-- Cognito User Pool을 이용해 로그인을 한다.
+- Cognito User Pool:
 
-- 사용자가 AWS 리소스에 직접 액세스 할 수 있도록 AWS 자격 증명을 제공한다.
+  - 앱 유저를 위한 로그인 서비스
+
+  - API Gateway와 ALB와 통합된다.
+
+  - serverless database를 생성한다.
+
+- Cognito Identity Pools:
+
+  - 앱에 등록된 사용자에게 임시 AWS 자격 증명을 제공해서 직접 엑세스 할 수 있게 한다.
 
 ---
 
