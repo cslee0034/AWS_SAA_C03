@@ -2,6 +2,8 @@
 
 ## ECS
 
+![ECS](./pictures/ECS.png)
+
 Elastic Container Service의 약자로 Docker 컨테이너를 간편하게 배포할 수 있는 AWS의 완전 관리형 서비스이다.
 
 - ECS 클러스터에서 ECS 테스크를 실행하는 형태로 작동한다.
@@ -20,11 +22,15 @@ Elastic Container Service의 약자로 Docker 컨테이너를 간편하게 배�
 
 ## ECR
 
+![ECR](./pictures/ECR.png)
+
 Elastic Container Registry의 약자로 Docker 컨테이너 이미지를 저장, 관리, 배포하는 완전 관리형 서비스이다.
 
 - S3를 기반으로 한다.
 
 ## EKS
+
+![EKS](./pictures/EKS.png)
 
 Elastic Kubernetes Service의 약자로 AWS에서 제공하는 관리형 Kubernetes 클러스터 서비스이다.
 
