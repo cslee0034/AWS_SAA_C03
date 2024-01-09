@@ -18,6 +18,8 @@ Relational Database Service의 약자로 AWS가 관리하는 관계형 데이터
 
 - SSH 접속이 불가능하다.
 
+- Secrets Manager와 통합하여 DB 자격 증명을 관리할 수 있다.
+
 ## Read Replicas
 
 - 최대 15개의 읽기 전용 복제본을 가질 수 있다.
@@ -52,7 +54,7 @@ Relational Database Service의 약자로 AWS가 관리하는 관계형 데이터
 
 - RDS와 Aurora의 장애 극복 시간을 66% 까지 줄일 수 있다.
 
-- DB에 IAM인증을 강제한다.
+- DB에 IAM인증을 강제할 수 있다.
 
 - RDS Proxy는 공개적으로 접근할 수 없다.
 
