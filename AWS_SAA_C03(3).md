@@ -174,6 +174,22 @@ AWS의 독점 기술로, 클라우드에 최적화된 RDB의 일종이다.
 
 - On-demand mode와 provisioned mode가 있다.
 
+# QLDB
+
+![QLDB](./pictures/QLDB.png)
+
+Quantum Ledger Database의 약자로 금융 트랜잭션 원장을 기록하는 데이터베이스.
+
+- 완전 관리형 서버리스 데이터베이스.
+
+- 데이터의 시간에 따른 모든 변경을 검토하는데 사용된다.
+
+- 불변 시스템. (한번 쓰이면 지울 수 없음)
+
+- SQL을 문법 지원.
+
+- 분산의 개념이 없고 중앙 데이터베이스에서만 저널을 작성할 수 있다. (no decentralization compoenent)
+
 # S3
 
 ![S3](./pictures/S3.png)
