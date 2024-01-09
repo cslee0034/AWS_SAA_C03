@@ -112,6 +112,18 @@ AWS의 독점 기술로, 클라우드에 최적화된 RDB의 일종이다.
 
 - On-Demand mode: Read/Write는 부하에 따라 자동으로 증감한다. 예측이 불가능할 때 좋다.
 
+- TTL 기능과 결합하여 session 저장소로 사용할 수 있다.
+
+- DynamoDB와 호환 되는 DAX cluster를 read cache로 사용할 수 있다. microsecond read latency를 가짐. (DynamoDB Accelerator)
+
+- 보안, 인증, 인가 모두 IAM을 통해 이루어짐.
+
+- DynamoDB Streams로 테이블의 변경사항에 대한 이벤트를 처리할 수 있다.
+
+- Global Table로 active-active 향태의 다중 리전 설정을 할 수 있다.
+
+- 빠르게 변하는, 유연한 스키마에 적합하다.
+
 # ElastiCache
 
 ![ElastiCache](./pictures/ElastiCache.png)
