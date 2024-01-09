@@ -124,11 +124,23 @@ AWS의 독점 기술로, 클라우드에 최적화된 RDB의 일종이다.
 
 - 빠르게 변하는, 유연한 스키마에 적합하다.
 
+# DocumentDB
+
+![DocumentDB](./pictures/DocumentDB.png)
+
+완전 관리형 MongoDB 대체 서비스.
+
+- 3개의 Multi-AZ, Read Replica 지원
+
+- 10GB 단위로 자동으로 확장.
+
 # ElastiCache
 
 ![ElastiCache](./pictures/ElastiCache.png)
 
 관리형 Redis 또는 Memcached이다.
+
+- MongoDB와 동일하다.
 
 - 캐시는 뛰어난 성능의 인메모리 데이터베이스이다.
 
