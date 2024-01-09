@@ -158,6 +158,22 @@ AWS의 독점 기술로, 클라우드에 최적화된 RDB의 일종이다.
 
 - 그래프 데이터 셋에서 복잡한 쿼리를 실행하는 것에 적합.
 
+# Keyspaces (for Apache Cassandra)
+
+![Keyspaces](./pictures/Keyspaces.png)
+
+관리형 Apache Cassandra 기반의 NoSQL 데이터베이스.
+
+- 서버리스.
+
+- 자동 스케일링.
+
+- 3개의 AZ에 걸쳐 복제됨.
+
+- Cassandra Query Language (CQL)을 사용한다.
+
+- On-demand mode와 provisioned mode가 있다.
+
 # S3
 
 ![S3](./pictures/S3.png)
