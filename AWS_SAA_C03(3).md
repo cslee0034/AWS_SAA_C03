@@ -190,6 +190,24 @@ Quantum Ledger Database의 약자로 금융 트랜잭션 원장을 기록하는 
 
 - 분산의 개념이 없고 중앙 데이터베이스에서만 저널을 작성할 수 있다. (no decentralization compoenent)
 
+# Timestream
+
+![Timestream](./pictures/Timestream.png)
+
+완전 관리형 서버리스 시계열 데이터베이스.
+
+- 시계열: 시간 정보를 포함하는 포인트의 모음.
+
+- 자동 스케일링.
+
+- RDB보다 빠르고 저렴.
+
+- 최근 데이터는 메모리에 보관되고 과거 데이터는 비용 최적화 스토리지에 보관.
+
+- 시계열 분석 기능이 내장되어 있음.
+
+- 전송중 및 저장 중 암호화 된다.
+
 # S3
 
 ![S3](./pictures/S3.png)
