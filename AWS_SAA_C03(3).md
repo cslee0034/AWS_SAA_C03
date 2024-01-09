@@ -78,11 +78,17 @@ AWS의 독점 기술로, 클라우드에 최적화된 RDB의 일종이다.
 
 - Cross Region 복제를 지원한다.
 
+- 3개의 AZ에 걸쳐 6개의 복제본에 저장된다.
+
 ## Aurora Replicas
 
 - Write Endpoint와 ReadEndpoint를 통해 읽기와 쓰기를 수행하며, 자동으로 스케일링 된다.
 
 - Custom Endpoints를 통해 특정 Aurora instance들로 접근을 유도할 수 있다.
+
+## Aurora Multi-Master
+
+- 지속적인 쓰기에 대한 failover가 필요할 때 사용한다.
 
 ## Aurora Serverless
 
