@@ -67,3 +67,19 @@ Elastic Map Reduce의 약자로 완전 관리형 Hadoop cluster이다.
 - 데이터를 직접 QuickSight로 넣을때 SPICE 엔진을 사용하여 in-memory 연산을 한다.
 
 - Enterprise 버전에서는 Column-Level security(CLS)를 설정할 수 있다.
+
+# Glue
+
+![Glue](./pictures/Glue.png)
+
+서버리스 관리형 extract, transform, and load(ETL)서비스.
+
+- 분석을 위한 데이터를 준비하고 변환하는 데 매우 유용한다.
+
+- 데이터를 Parquet 포멧으로 변경할 수 있다.
+
+- Glue Data Catalog는 Glue Data Crawler를 이용해서 S3, RDS, DynamoDB 등의 데이터를 크롤링 하고 ETL 작업에 사용될 메타데이터를 추출한다.
+
+- Athena, Redshift Spectrum, EMR 등이 데이터를 검색할 때 Glue Data Catalog를 이용한다.
+
+- Glue Job Bookmarks: 새 ETL 작업을 실행할 때 이전 데이터의 재처리를 방지한다.
