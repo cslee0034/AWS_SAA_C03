@@ -55,3 +55,15 @@ Elastic Map Reduce의 약자로 완전 관리형 Hadoop cluster이다.
 - 빅데이터 처리에 적합하다.
 
 - Apache Spark, HBase, Presto, Flink등과 함께 제공되며, 프로비저닝과 관리를 지원한다.
+
+# QuickSight
+
+![QuickSight](/pictures/QuickSight.png)
+
+서버리스 머신러닝 기반 비즈니스 분석 시각화 도구.
+
+- RDS, Athena, Redshift, S3 등 다양한 데이터 소스와 통합할 수 있다.
+
+- 데이터를 직접 QuickSight로 넣을때 SPICE 엔진을 사용하여 in-memory 연산을 한다.
+
+- Enterprise 버전에서는 Column-Level security(CLS)를 설정할 수 있다.
