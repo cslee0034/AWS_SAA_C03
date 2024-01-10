@@ -45,3 +45,13 @@ PostgreSQL을 기반으로 하는 OLAP(Online Analytical Processing).
 - 기본적으로 SQL 미지원, 플러그인을 통한 활성화 가능.
 
 - OpenSearch 대시보드와 함께 제공.
+
+# EMR
+
+![EMR](./pictures/EMR.png)
+
+Elastic Map Reduce의 약자로 완전 관리형 Hadoop cluster이다.
+
+- 빅데이터 처리에 적합하다.
+
+- Apache Spark, HBase, Presto, Flink등과 함께 제공되며, 프로비저닝과 관리를 지원한다.
