@@ -83,3 +83,19 @@ Elastic Map Reduce의 약자로 완전 관리형 Hadoop cluster이다.
 - Athena, Redshift Spectrum, EMR 등이 데이터를 검색할 때 Glue Data Catalog를 이용한다.
 
 - Glue Job Bookmarks: 새 ETL 작업을 실행할 때 이전 데이터의 재처리를 방지한다.
+
+# Lake Formation
+
+![Lake_Formation](./pictures/Lake_Formation.png)
+
+Data lake를 구축하기 위해 사용하는 완전 관리형 서비스.
+
+- Data lake: 데이터 분석을 위한 중앙 집중형 저장소.
+
+- 데이터의 검색, 정제, 변환, 주입을 돕는다.
+
+- 데이터 수집, 정리, 이동, 카탈로그 작성 등의 중복 제거 및 자동화.
+
+- S3, RDS 등은 Lake Formation로 곧바로 데이터를 이전하기 위한 blueprint를 제공한다.
+
+- 행, 열 레벨의 Fine-Grained Access Control.
