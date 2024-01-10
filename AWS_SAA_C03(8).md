@@ -42,6 +42,6 @@ PostgreSQL을 기반으로 하는 OLAP(Online Analytical Processing).
 
 - 모든 필드, 부분 일치 항목 등을 검색할 수 있다.
 
-- 기본적으로 SQL 미지원, 플러그인을 통한 호아성화 가능.
+- 기본적으로 SQL 미지원, 플러그인을 통한 활성화 가능.
 
 - OpenSearch 대시보드와 함께 제공.
