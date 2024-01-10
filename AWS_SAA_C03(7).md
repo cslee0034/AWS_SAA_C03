@@ -1,4 +1,4 @@
-# AWS_SAA_C03(6) / Monitoring & Architect
+# AWS_SAA_C03(7) / Monitoring & Architect
 
 # Step Functions
 
