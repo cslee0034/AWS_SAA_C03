@@ -76,7 +76,7 @@ Multi Factor Authentication의 약자로, password와 security device를 조합�
 
   - API Gateway와 ALB와 통합된다.
 
-  - serverless database를 생성한다.
+  - Serverless database를 생성한다.
 
 - Cognito Identity Pools:
 
@@ -238,7 +238,7 @@ Elastic Block Storage는 EC2에 붙이는 '네트워크' 장치이다 (네트워
 
 특정 시점의 EBS를 백업할 수 있다.
 
-- EBS volume(저장 공간의 한 단위 또는 블록 레벨의 스토리지 장치)을 분리하지 않아도 되지만, 분리할 것이 권장된다.
+- EC2와 EBS volume(저장 공간의 한 단위 또는 블록 레벨의 스토리지 장치)을 분리하지 않아도 되지만, 분리할 것이 권장된다.
 
 - AZ나 Region을 건너 뛰어 Snapshot을 복사할 수 있다.
 
