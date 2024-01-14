@@ -11,3 +11,7 @@
 ## [AWS_SAA_C03(5) / Decoupling](https://github.com/cslee0034/AWS_SAA_C03/blob/main/AWS_SAA_C03(5).md)
 
 ## [AWS_SAA_C03(6) / Container & Serverless](https://github.com/cslee0034/AWS_SAA_C03/blob/main/AWS_SAA_C03(6).md)
+
+## [AWS_SAA_C03(7) / Monitoring & Architect](https://github.com/cslee0034/AWS_SAA_C03/blob/main/AWS_SAA_C03(7).md)
+
+## [AWS_SAA_C03(8) / Analytics](https://github.com/cslee0034/AWS_SAA_C03/blob/main/AWS_SAA_C03(8).md)
