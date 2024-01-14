@@ -99,3 +99,15 @@ Data lake를 구축하기 위해 사용하는 완전 관리형 서비스.
 - S3, RDS 등은 Lake Formation로 곧바로 데이터를 이전하기 위한 blueprint를 제공한다.
 
 - 행, 열 레벨의 Fine-Grained Access Control.
+
+# MSK
+
+![MSK](./pictures/MSK.png)
+
+Managed Streaming for Apache Kafka의 약자이다.
+
+- 완전 관리형 서버리스 Apache Kafka.
+
+- MSK가 Kafka 브로커노드 & 주키퍼노드를 자동으로 생성한다.
+
+- 일반적인 Apache Kafka 오류로부터 자동 복구를 지원한다.
