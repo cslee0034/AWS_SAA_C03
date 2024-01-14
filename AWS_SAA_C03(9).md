@@ -1,4 +1,4 @@
-# AWS_SAA_C03(8) / Machine Learning
+# AWS_SAA_C03(9) / Machine Learning
 
 # Rekognition
 
