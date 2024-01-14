@@ -115,3 +115,187 @@ AWS의 서버리스 서비스로, REST API를 생성할 수 있다.
 - VPC 내부에서만 접근이 가능하고, intergace VPC endpoint (ENI)를 사용한다.
 
 - 접근을 정의하기 위해 resource policy를 사용한다.
+
+# IGW
+
+![IGW](./pictures/IGW.png)
+
+Internet Gateway의 약자. VPC와 인터넷 사이에서 트래픽을 라우팅 하는데 사용된다.
+
+- VPC와 IGW는 1:1로 매칭된다.
+
+- IGW만으로는 작동하지 않고 라우팅 데이블을 편집해야 작동한다.
+
+# Egress-only Internet Gateway
+
+![IGW](./pictures/IGW.png)
+
+VPC (Virtual Private Cloud) 구성 요소 중 하나.
+
+- IPv6 주소를 사용한다.
+
+- 나가는 (egress) 트래픽만 허용.
+
+- 인터넷에서 VPC로 들어오는 (ingress) 트래픽은 차단.
+
+- VPC에서 시작된 연결에 대해서는 응답 트래픽이 들어올 수 있도록 허용하지만, 외부에서 시작된 새로운 연결은 차단. (상태 기반 라우팅)
+
+# NAT Gateway
+
+![NAT_Gateway](./pictures/NAT_Gateway.png)
+
+프라이빗 서브넷에서 인터넷 연결을 가능하게 하는 게이트웨이.
+
+- IGW를 필요로 한다 (Private Subnet => NATGW => IGW)
+
+- 동일한 서브넷의 EC2 인스턴스에서는 사용할 수 없다.
+
+- 특정 AZ에 생성되며 EIP를 사용한다.
+
+- 사용량 및 대역폭에 대해 시간당 비용을 지불한다.
+
+## NAT Instance
+
+Network Address Translation을 관리하는 인스턴스. (deprecated)
+
+# Transit Gateway
+
+![Transit_Gateway](./pictures/Transit_Gateway.png)
+
+여러 VPC, 온프레미스 네트워크, AWS와 다른 클라우드 서비스 사이의 네트워크 트래픽을 중앙 집중식으로 관리할 수 있는 허브.
+
+- RAM을 사용하여 교차 계정 공유.
+
+- 여러 지역에 걸쳐 Transit Gateway를 피어링할 수 있다.
+
+- Direct Connect 게이트웨이, Site-to-Site VPN등과 함께 작동한다.
+
+- IP 멀티캐스트 지원.
+
+- 허브 앤 스포크 모델을 사용한다. (모든 네트워크 자원이 Transit Gateway(허브)에 연결되며, 이 허브를 통해 다른 네트워크(스포크)와 통신)
+
+# VPC
+
+![VPC](./pictures/VPC.png)
+
+AWS의 가상 사설 네트워크 서비스.
+
+- AWS의 리전 내에는 최대 5개의 VPC가 있을 수 있다.
+
+- 최대 크기는 /16 (IP 주소 65536개)이다.
+
+- 프라이빗이기 IPv4 범위만 허용된다.
+
+- VPC CIDR는 다른 네트워크와 겹치지 않아야 한다.
+
+## Subnet
+
+![Subnet](./pictures/Subnet.png)
+
+VPC 내부의 IP 주소 범위. CIDR로 나타낸다.
+
+- x.x.x.x/n의 형태로 표시한다.
+
+- /8: 255.0.0.0
+
+- /16: 255.255.0.0
+
+- /24: 255.255.255.0
+
+- /32: 255.255.255.255
+
+AWS에서 5개의 IP를 기본적으로 가져간다. (처음 4개, 마지막 1개)
+
+## Bastion Hosts
+
+![Bastion_Hosts](./pictures/Bastion_Hosts.png)
+
+프라이빗 서브넷에서 SSH를 통해 VPC내부의 자원에 접근할 수 있도록 돕는 EC2 인스턴스.
+
+- 22번 포트 인바운드를 허용해야 한다.
+
+## NACL
+
+![NACL](./pictures/NACL.png)
+
+Network Access Control List의 약자. 트레픽 제어 방화벽의 역할을 한다.
+
+- 서브넷 당 하나의 NACL을 할당된다.
+
+- 특정한 IP, Port, Protocol 허용.
+
+- 새로 생성한 NACL은 모든 요청을 Deny 한다.
+
+- 규칙에는 숫자(1~32766)가 있으며 숫자가 낮을수록 우선순위가 높다.
+
+- 서브넷 레벨에서 특정 IP를 차단하는데 유용하다.
+
+## VPC Peering
+
+![VPC_Peering](./pictures/VPC_Peering.png)
+
+Private IPv4 혹은 IPv6를 통해 둘 혹은 그 이상의 VPC를 연결하는 서비스.
+
+- 동일한 네트워크에 있는 것처럼 동작하도록 만든다.
+
+- CIDR이 중복되면 안된다.
+
+- 1:1 연결로 서로 통신해야 하는 VPC마다 설정해야 한다. (transitive하지 않다)
+
+- EC2 인스턴스가 서로 통신할 수 있도록 VPC 서브넷의 라우팅 테이블을 업데이트 해야 한다.
+
+## VPC Endpoints (AWS PrivateLink)
+
+![VPC_Endpoints](./pictures/VPC_Endpoints.png)
+
+인터넷을 거치지 않고 Private Network를 사용하여 VPC 내부에서 AWS 서비스에 연결하는 서비스.
+
+- 문제가 생길 경우 VPC 내의 DNS와 라우트 테이블을 확인 해본다.
+
+- ENI로 프로비전 할 경우 대부분의 AWS 서비스 지원
+
+- Gateway Endpoints + Route table로 프로비전 할 경우 S3, DynamoDB 지원.
+
+- 게이트웨이는 무료이고, ENI는 유료이기 떄문에 가능하면 게이트웨이를 사용하는 편이 좋다.
+
+- ENI는 다른 VPC 등에서 엑세스가 필요할 경우 선호된다.
+
+## VPC Flow Logs
+
+![VPC_Flow_Logs](./pictures/VPC_Flow_Logs.png)
+
+인터페이스로 들어오는 IP 트래픽에 대한 정보를 캡쳐하는 서비스.
+
+- 연결 문제를 모니터링하는 데 도움이 된다.
+
+- Flow logs는 S3, CloudWatch Logs, and Kinesis Data Firehose로 전송 가능.
+
+- ELB, RDS, ElastiCache, Redshift, NAT gateway, Transit gateway 등의 네트워크 정보도 캡쳐 가능.
+
+## Site-to-Site VPN
+
+![Site-to-Site_VPN](./pictures/Site-to-Site_VPN.png)
+
+Virtual Private Gateway (VGW) 서비스. 기업이나 조직의 본사와 지사, 또는 데이터 센터와 클라우드 리소스 간의 안전한 연결을 위해 사용된다.
+
+## VPN CloudHub
+
+서로 다른 위치 간의 기본 또는 보조 네트워크 연결을 위한 저렴한 허브 앤 스포크 모델. (VPN 전용)
+
+- VPN 연결이 여러 개인 경우 여러 사이트 간 보안 통신 제공.
+
+- VPN 연결이므로 공용 인터넷을 통과한다.
+
+## Direct Connect (DX)
+
+원격 네트워크 사용자에게 전용 개인 연결을 제공한다.
+
+- Direct Connect locations과의 전용 연결을 설정해야 한다.
+
+- Virtual Private Gateway를 VPC 내에 설정해야 한다.
+
+- 온프레미스 + 클라우드의 하이브리드 환경에 사용된다.
+
+- IPv4 및 IPv6 모두 지원.
+
+- 새로운 연결을 설정하는 데 리드 타임이 1개월 이상 걸리는 경우가 많다.
