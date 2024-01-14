@@ -15,3 +15,7 @@
 ## [AWS_SAA_C03(7) / Monitoring & Architect](https://github.com/cslee0034/AWS_SAA_C03/blob/main/AWS_SAA_C03(7).md)
 
 ## [AWS_SAA_C03(8) / Analytics](https://github.com/cslee0034/AWS_SAA_C03/blob/main/AWS_SAA_C03(8).md)
+
+## [AWS_SAA_C03(9) / Machine Learning](https://github.com/cslee0034/AWS_SAA_C03/blob/main/AWS_SAA_C03(9).md)
+
+## [AWS_SAA_C03(10) / Security & Encryption](https://github.com/cslee0034/AWS_SAA_C03/blob/main/AWS_SAA_C03(10).md)
