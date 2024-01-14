@@ -397,6 +397,8 @@ on-premises data와 cloud data 사이의 가교 역할을 하는 서비스.
 
 구성된 S3 버킷은 NFS와 SMB protocol을 사용하여 액세스 할 수 있다.
 
+로컬 캐시를 지원하여 자주 사용하는 서비스에 대한 빠른 엑세스를 제공한다.
+
 # Transfer Family
 
 ![Transfer_Family](./pictures/Transfer_Family.png)
