@@ -148,6 +148,8 @@ AWS 계정을 보호하기 위한 지능형 위협 탐지 서비스.
 
 - EC2, ECR, Lambda에 대해서 보안 평가를 수행한다.
 
+- S3 등과 같은 AWS 리소스 모니터링에는 부적합하다.
+
 # Macie
 
 ![Macie](./pictures/Macie.png)
