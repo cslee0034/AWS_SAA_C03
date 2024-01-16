@@ -126,6 +126,8 @@ AWS 계정을 보호하기 위한 지능형 위협 탐지 서비스.
 
 - AWS 계정 내에서 이루어지는 모든 활동을 분석해서 위협을 탐지할 수 있다.
 
+- 직접적 트레픽 흐름 제어를 제공하지는 않는다.
+
 # Inspector
 
 ![Inspector](./pictures/Inspector.png)
