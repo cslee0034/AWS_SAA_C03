@@ -20,6 +20,8 @@ AWS의 모든 서비스에 대한 지표를 제공하는 서비스.
 
 - 지표의 CloudWatch 대시보드를 생성할 수 있다.
 
+- 대시보드 공유 기능을 통해 계정을 생성하지 않고 유저가 대시보드에 접근할 수 있다 (이후 유저 고유의 비밀번호 생성)
+
 # EventBridge
 
 ![EventBridge](./pictures/EventBridge.png)
