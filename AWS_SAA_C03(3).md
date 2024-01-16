@@ -114,7 +114,7 @@ AWS의 독점 기술로, 클라우드에 최적화된 RDB의 일종이다.
 
 - TTL 기능과 결합하여 session 저장소로 사용할 수 있다.
 
-- DynamoDB와 호환 되는 DAX cluster를 read cache로 사용할 수 있다. microsecond read latency를 가짐. (DynamoDB Accelerator)
+- DynamoDB와 호환 되는 DAX cluster를 read cache로 사용할 수 있다. microsecond read latency를 가짐. (DynamoDB Accelerator, 완전 관리형 캐시 서비스)
 
 - 보안, 인증, 인가 모두 IAM을 통해 이루어짐.
 
