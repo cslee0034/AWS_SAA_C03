@@ -42,6 +42,10 @@ AWS의 Content Delivery Network(CDN) 서비스이다.
 
 - Shield, AWS Application Firewall과 통합할 수 있다.
 
+- Origin: CloudFront에 정보를 제공하는 원천. (정적, 동적 웹 콘텐츠 등)
+
+- Distribution: 사용자들에게 콘텐츠를 전달하는 방식을 설정하는 일종의 규칙 세트. + 사용자 요청이 들어왔을때 가장 가까운 에지 로케이션의 캐시에서 해당 콘텐츠를 찾는다.
+
 # Global Accelerator
 
 ![Global_Accelerator](./pictures/Global_Accelerator.png)
