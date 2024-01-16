@@ -43,3 +43,15 @@ AWS 계정에 대한 governance, compliance, audit기능을 제공한다.
 AWS 리소스의 규정 준수를 감사하고 기록하는 서비스.
 
 - 보안 그룹 내의 SSH 액세스가 가능한지, 변경사항에 대한 알림이 가는지 등을 감사할 수 있다.
+
+- 구체적인 구성 관리, 변경 추적, 규칙 위반 구성 변경 감지.
+
+# Trusted Advisor
+
+![Trusted_Advisor](./pictures/Trusted_Advisor.png)
+
+AWS 환경의 최적화를 돕는 서비스.
+
+- 다양한 체크 및 필요에 다른 이메일 알림 설정.
+
+- 광범위한 Best Practice 제시.
