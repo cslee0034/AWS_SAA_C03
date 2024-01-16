@@ -178,6 +178,8 @@ Network Address Translation을 관리하는 인스턴스. (deprecated)
 
 - 허브 앤 스포크 모델을 사용한다. (모든 네트워크 자원이 Transit Gateway(허브)에 연결되며, 이 허브를 통해 다른 네트워크(스포크)와 통신)
 
+- 특정 트래픽 검사 기능 지원하지 않는다.
+
 # VPC
 
 ![VPC](./pictures/VPC.png)
