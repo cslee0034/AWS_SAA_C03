@@ -303,3 +303,11 @@ Virtual Private Gateway (VGW) 서비스. 기업이나 조직의 본사와 지사
 - IPv4 및 IPv6 모두 지원.
 
 - 새로운 연결을 설정하는 데 리드 타임이 1개월 이상 걸리는 경우가 많다.
+
+## Traffic Mirroring
+
+![Traffic_Mirroring](./pictures/Traffic_Mirroring.png)
+
+VPC의 트래픽을 다른 대상으로 복제하는 기능을 제공한다.
+
+- 트레픽 자체 필터링이나 수정 기능 제공하지 않는다.
