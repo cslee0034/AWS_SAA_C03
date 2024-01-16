@@ -58,6 +58,16 @@ AWS Certificate Manager의 약자로 AWS에서 제공하는 인증서 관리 서
 
 - EC2와 함께 사용할 수 없다.
 
+# Network Firewall
+
+![Network_Firewall](./pictures/Network_Firewall.png)
+
+VPC에서 사용자 지정 방화벽 규칙을 만들어 트래픽 검사와 필터링을 수행할 수 있는 서비스.
+
+- 트래픽 흐름 제어.
+
+- 트래픽 검사 및 필터링.
+
 # WAF
 
 ![WAF](./pictures/WAF.png)
