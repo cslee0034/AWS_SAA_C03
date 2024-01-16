@@ -50,7 +50,7 @@ AWS의 Content Delivery Network(CDN) 서비스이다.
 
 ![Global_Accelerator](./pictures/Global_Accelerator.png)
 
-전 세계에 분산된 AWS 엣지 위치를 활용하여 사용자의 트래픽을 최적의 경로로 안내하는 서비스.
+전 세계에 분산된 AWS Edge Location을 활용하여 사용자의 트래픽을 최적의 경로로 안내하는 서비스.
 
 - UDP 및 TCP 지원.
 
@@ -96,7 +96,7 @@ AWS의 서버리스 서비스로, REST API를 생성할 수 있다.
 
 - API 응답을 캐싱이 가능하다.
 
-- 어떠한 AWS 서비스도 노출시켜 직접 접근하도록 할 수 있다.
+- 어떠한 AWS 서비스든 직접 접근하도록 할 수 있다.
 
 ## Endpoint Types
 
