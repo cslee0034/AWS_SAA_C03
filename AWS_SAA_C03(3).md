@@ -295,17 +295,25 @@ JSON 기반의 S3 정책이다.
 
 ## S3 Standard – General Purpose
 
-- 99.99% 가용성: 자주 접근되는 데이터를 위한 고성능 스토리지.
+자주 접근되는 데이터를 위한 고성능 스토리지.
+
+검색 비용이 들지 않는다.
+
+- 99.99% 가용성
+
 - 용도: 빅 데이터 분석, 모바일 및 게임 어플리케이션, 콘텐츠 배포 등.
+
 - 특징: 낮은 지연 시간과 높은 처리량, 2개 시설의 동시적 장애를 견딜 수 있음.
 
 ## S3 Infrequent Access (IA)
 
+비교적 자주 접근되지 않지만, 필요할 때 빠른 접근이 필요한 데이터용.
+
+비용이 S3 Standard보다 낮음.
+
 1. S3 Standard-IA:
 
-   - 99.9% 가용성: 비교적 자주 접근되지 않지만, 필요할 때 빠른 접근이 필요한 데이터용.
-
-   - 비용: S3 Standard보다 낮음.
+   - 99.9% 가용성
 
    - 용도: 재해 복구, 백업 등.
 
@@ -319,11 +327,31 @@ JSON 기반의 S3 정책이다.
 
 저비용 보관/백업용 객체 스토리지.
 
-- S3 Glacier Instant Retrieval: 분기별로 한 번 접근하는 데이터용, 밀리초 내 검색 가능.
+보관 비용 + 검색 비용이 든다.
 
-- S3 Glacier Flexible Retrieval (구 S3 Glacier): 요청이 완료되는 시간에 따른 다양한 검색 옵션 제공.
+1. S3 Glacier Instant Retrieval
 
-- S3 Glacier Deep Archive: 장기 보관용, 12시간 또는 48시간 검색 옵션.
+   - 분기별로 한 번 접근하는 데이터용, 밀리초 내 검색 가능.
+
+   - 최소 저장 기간 90일.
+
+2. S3 Glacier Flexible Retrieval (구 S3 Glacier)
+
+   - Expedited: 1 ~ 5분 이내에 데이터를 받을 수 있음.
+
+   - Standard: 3 ~ 5시간 내에 데이터를 받을 수 있음.
+
+   - Bulk: 5 ~ 12시간 내에 데이터를 받을 수 있음.
+
+3. S3 Glacier Deep Archive
+
+   - 장기 보관용
+
+   - Standard: 12시간 내에 데이터를 받을 수 있음.
+
+   - Bulk: 48시간 내에 데이터를 받을 수 있음.
+
+   - 최소 보관 기간 180일.
 
 ## S3 Intelligent-Tiering
 
@@ -333,7 +361,7 @@ JSON 기반의 S3 정책이다.
 
 - 검색 비용 없음
 
-- Frequent Access tier -> Infrequent Access tier -> Archive Instant Access tier -> Archive Access tier -> Deep Archive Access tier
+- Frequent Access tier(기본형) -> Infrequent Access tier -> Archive Instant Access tier -> Archive Access tier -> Deep Archive Access tier
 
 ## Performance
 
