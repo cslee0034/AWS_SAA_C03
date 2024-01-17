@@ -20,6 +20,10 @@ Relational Database Service의 약자로 AWS가 관리하는 관계형 데이터
 
 - Secrets Manager와 통합하여 DB 자격 증명을 관리할 수 있다.
 
+- 베이스 EBS를 바꾸는 것으로 I/O 성능을 향상시킬 수 있다.
+
+- 인스턴스 클래스를 바꾸는 것으로 메모리 집약적 작업 성능을 향상시킬 수 있다.
+
 ## Read Replicas
 
 - 최대 15개의 읽기 전용 복제본을 가질 수 있다.
