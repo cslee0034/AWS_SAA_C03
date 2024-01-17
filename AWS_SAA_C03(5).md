@@ -102,6 +102,10 @@ Event Recieve
 
 - 데이터가 들어오면 삭제가 불가능하다.
 
+- Producer: 어플리케이션, 서버 로그, IoT 기기, AWS 서비스 등.
+
+- Consumer: 어플리케이션, EC2, Lambda, Kinesis Data Analytics, Kinesis Data Firehose 등.
+
 ## Kinesis Data Firehose
 
 ![Kinesis_Data_Firehose](./pictures/Kinesis_Data_Firehose.png)
@@ -119,6 +123,8 @@ Event Recieve
   - 3rd-party Partner Destination: Datadog, New Relic, MongoDB ...
 
   - Custom Destination: HTTP Endpoint
+
+  - DynamoDB는 End Point에 없다
 
 - 데이터가 지나간 만큼 비용 지불.
 
