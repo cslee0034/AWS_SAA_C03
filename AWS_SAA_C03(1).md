@@ -284,6 +284,8 @@ Elastic File System의 약자로 여러 개의 EC2에 mount할 수 있는 manage
 
 - 다중 AZ의 EC2와 연결이 가능하다.
 
+- 데이터를 여러 가용 영역(AZ)에 걸쳐 자동으로 복제한다.
+
 - 가용성이 높고, 확장성이 높고, 가격이 비싸다.
 
 - Linux base AMI (POSIX)에서만 사용 가능하다.
