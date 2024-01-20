@@ -254,22 +254,6 @@ Network Access Control List의 약자. 트레픽 제어 방화벽의 역할을 �
 
 - VPN 연결이므로 공용 인터넷을 통과한다.
 
-## Direct Connect (DX)
-
-![DX](./pictures/DX.png)
-
-원격 네트워크 사용자에게 전용 개인 연결을 제공한다.
-
-- Direct Connect locations과의 전용 연결을 설정해야 한다.
-
-- Virtual Private Gateway를 VPC 내에 설정해야 한다.
-
-- 온프레미스 + 클라우드의 하이브리드 환경에 사용된다.
-
-- IPv4 및 IPv6 모두 지원.
-
-- 새로운 연결을 설정하는 데 리드 타임이 1개월 이상 걸리는 경우가 많다.
-
 ## Traffic Mirroring
 
 ![Traffic_Mirroring](./pictures/Traffic_Mirroring.png)
@@ -327,3 +311,19 @@ Virtual Private Gateway (VGW) 서비스. 기업이나 조직의 본사와 지사
 ![VPN_Gateway](./pictures/VPN_Gateway.png)
 
 사용자의 온프레미스 네트워크와 AWS의 가상 프라이빗 클라우드(VPC) 간에 안전한 연결을 설정하는 서비스.
+
+## Direct Connect (DX)
+
+![DX](./pictures/DX.png)
+
+원격 네트워크 사용자에게 전용 개인 연결을 제공한다.
+
+- Direct Connect locations과의 전용 연결을 설정해야 한다.
+
+- Virtual Private Gateway를 VPC 내에 설정해야 한다.
+
+- 온프레미스 + 클라우드의 하이브리드 환경에 사용된다.
+
+- IPv4 및 IPv6 모두 지원.
+
+- 새로운 연결을 설정하는 데 리드 타임이 1개월 이상 걸리는 경우가 많다.
