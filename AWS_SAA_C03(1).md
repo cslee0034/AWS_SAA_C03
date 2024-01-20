@@ -42,6 +42,22 @@ Multi Factor Authentication의 약자로, password와 security device를 조합�
 
 - AWS 서비스를 위한 user role을 생성한다.
 
+# Organizations
+
+![Organizations](./pictures/Organizations.png)
+
+- 글로벌 서비스
+
+- Member 계정은 하나의 Organizations에만 속할 수 있다.
+
+- 모든 계정의 비용을 통합한다.
+
+- 사용량을 종합해서 계산하기 떄문에 비용적 이익이 있다.
+
+- 계정간 Reserved instance와 Savings plan discount를 공유한다.
+
+- Organizations 내에 계정 생성을 자동화 할 수 있는 API가 있어 계정을 쉽게 생성할 수 있다.
+
 ## IAM Group vs Organization
 
 - AWS Organization은 AWS 계정을 생성하고, 그룹화(OU, Organizational Unit)하고, 정책(SCP, Service Control Policy)을 적용할 수 있다.
