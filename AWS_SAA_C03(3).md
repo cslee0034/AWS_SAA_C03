@@ -128,6 +128,8 @@ AWS의 독점 기술로, 클라우드에 최적화된 RDB의 일종이다.
 
 - 빠르게 변하는, 유연한 스키마에 적합하다.
 
+- 한 item은 최대 400KB의 용량 제한을 갖는다.
+
 # DocumentDB
 
 ![DocumentDB](./pictures/DocumentDB.png)
