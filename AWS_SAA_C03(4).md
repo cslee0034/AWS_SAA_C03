@@ -98,6 +98,18 @@ AWS의 서버리스 서비스로, REST API를 생성할 수 있다.
 
 - 어떠한 AWS 서비스든 직접 접근하도록 할 수 있다.
 
+## API Gateway EndPoint
+
+1. Edge-Optimized EndPoint
+
+   - 전 세계 어디서나 사용자에게 낮은 지연 시간을 제공한다.
+
+   - 글로벌 서비스에 유리하다.
+
+2. 특정 AWS 리전 내에서만 API 트래픽을 처리한다.
+
+   - 지역별 데이터 규정 준수에 적합하다.
+
 ## Endpoint Types
 
 ### Edge-Optimized (default)
