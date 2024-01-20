@@ -162,24 +162,6 @@ VPC (Virtual Private Cloud) 구성 요소 중 하나.
 
 Network Address Translation을 관리하는 인스턴스. (deprecated)
 
-# Transit Gateway
-
-![Transit_Gateway](./pictures/Transit_Gateway.png)
-
-여러 VPC, 온프레미스 네트워크, AWS와 다른 클라우드 서비스 사이의 네트워크 트래픽을 중앙 집중식으로 관리할 수 있는 허브.
-
-- RAM을 사용하여 교차 계정 공유.
-
-- 여러 지역에 걸쳐 Transit Gateway를 피어링할 수 있다.
-
-- Direct Connect 게이트웨이, Site-to-Site VPN등과 함께 작동한다.
-
-- IP 멀티캐스트 지원.
-
-- 허브 앤 스포크 모델을 사용한다. (모든 네트워크 자원이 Transit Gateway(허브)에 연결되며, 이 허브를 통해 다른 네트워크(스포크)와 통신)
-
-- 특정 트래픽 검사 기능 지원하지 않는다.
-
 # VPC
 
 ![VPC](./pictures/VPC.png)
@@ -236,20 +218,6 @@ Network Access Control List의 약자. 트레픽 제어 방화벽의 역할을 �
 
 - 서브넷 레벨에서 특정 IP를 차단하는데 유용하다.
 
-## VPC Peering
-
-![VPC_Peering](./pictures/VPC_Peering.png)
-
-Private IPv4 혹은 IPv6를 통해 둘 혹은 그 이상의 VPC를 연결하는 서비스.
-
-- 동일한 네트워크에 있는 것처럼 동작하도록 만든다.
-
-- CIDR이 중복되면 안된다.
-
-- 1:1 연결로 서로 통신해야 하는 VPC마다 설정해야 한다. (transitive하지 않다)
-
-- EC2 인스턴스가 서로 통신할 수 있도록 VPC 서브넷의 라우팅 테이블을 업데이트 해야 한다.
-
 ## VPC Endpoints (AWS PrivateLink)
 
 ![VPC_Endpoints](./pictures/VPC_Endpoints.png)
@@ -278,21 +246,17 @@ Private IPv4 혹은 IPv6를 통해 둘 혹은 그 이상의 VPC를 연결하는 
 
 - ELB, RDS, ElastiCache, Redshift, NAT gateway, Transit gateway 등의 네트워크 정보도 캡쳐 가능.
 
-## Site-to-Site VPN
-
-![Site-to-Site_VPN](./pictures/Site-to-Site_VPN.png)
-
-Virtual Private Gateway (VGW) 서비스. 기업이나 조직의 본사와 지사, 또는 데이터 센터와 클라우드 리소스 간의 안전한 연결을 위해 사용된다.
-
 ## VPN CloudHub
 
 서로 다른 위치 간의 기본 또는 보조 네트워크 연결을 위한 저렴한 허브 앤 스포크 모델. (VPN 전용)
 
-- VPN 연결이 여러 개인 경우 여러 사이트 간 보안 통신 제공.
+- VPN 연결이 '여러 개'인 경우 여러 사이트 간 보안 통신 제공.
 
 - VPN 연결이므로 공용 인터넷을 통과한다.
 
 ## Direct Connect (DX)
+
+![DX](./pictures/DX.png)
 
 원격 네트워크 사용자에게 전용 개인 연결을 제공한다.
 
@@ -313,3 +277,53 @@ Virtual Private Gateway (VGW) 서비스. 기업이나 조직의 본사와 지사
 VPC의 트래픽을 다른 대상으로 복제하는 기능을 제공한다.
 
 - 트레픽 자체 필터링이나 수정 기능 제공하지 않는다.
+
+# VPC의 연결
+
+## VPC Peering
+
+![VPC_Peering](./pictures/VPC_Peering.png)
+
+AWS 내의 Private IPv4 혹은 IPv6를 통해 둘 혹은 그 이상의 VPC를 연결하는 서비스.
+
+- 두 개의 Virtual Private Clouds (VPC) 간에 네트워크 연결을 설정할 수 있게 해주는 기능을 한다.
+
+- 동일한 네트워크에 있는 것처럼 동작하도록 만든다.
+
+- CIDR이 중복되면 안된다.
+
+- 1:1 연결로 서로 통신해야 하는 VPC마다 설정해야 한다. (transitive하지 않다)
+
+- EC2 인스턴스가 서로 통신할 수 있도록 VPC 서브넷의 라우팅 테이블을 업데이트 해야 한다.
+
+## Site-to-Site VPN
+
+![Site-to-Site_VPN](./pictures/Site-to-Site_VPN.png)
+
+Virtual Private Gateway (VGW) 서비스. 기업이나 조직의 본사와 지사, 또는 데이터 센터와 클라우드 리소스 간의 안전한 연결을 위해 사용된다.
+
+- 두 개 이상의 서로 다른 위치(사이트)의 네트워크를 연결하는 VPN(Virtual Private Network) 방식을 지칭한다.
+
+### Transit Gateway (TGW)
+
+![Transit_Gateway](./pictures/Transit_Gateway.png)
+
+여러 VPC, 온프레미스 네트워크, AWS와 다른 클라우드 서비스 사이의 네트워크 트래픽을 중앙 집중식으로 관리할 수 있는 허브.
+
+- RAM을 사용하여 교차 계정 공유.
+
+- 여러 지역에 걸쳐 Transit Gateway를 피어링할 수 있다.
+
+- Direct Connect 게이트웨이, Site-to-Site VPN등과 함께 작동한다.
+
+- IP 멀티캐스트 지원.
+
+- 허브 앤 스포크 모델을 사용한다. (모든 네트워크 자원이 Transit Gateway(허브)에 연결되며, 이 허브를 통해 다른 네트워크(스포크)와 통신)
+
+- 특정 트래픽 검사 기능 지원하지 않는다.
+
+### VPN Gateway (VGW)
+
+![VPN_Gateway](./pictures/VPN_Gateway.png)
+
+사용자의 온프레미스 네트워크와 AWS의 가상 프라이빗 클라우드(VPC) 간에 안전한 연결을 설정하는 서비스.
