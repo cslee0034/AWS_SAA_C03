@@ -71,3 +71,29 @@ AWS 환경의 최적화를 돕는 서비스.
 - 복잡한 데이터 변환 또는 데이터 전송 작업을 자동화할 수 있다.
 
 - 여러개의 SaaS와 연동할 수 있다.
+
+# Systems Manager
+
+![Systems_Manager](./pictures/Systems_Manager.png)
+
+AWS의 리소스 및 온프레이스 서버의 자동, 수동 작업을 관리한다.
+
+- Automation action: 여러 AWS 서비스에 걸쳐 일상적 운영 작업을 자동화 할 수 있게 지원한다.
+
+  - ex) 패치 관리, 소프트웨어 설치.
+
+- Run command: 관리 대상 인스턴스에 대한 작업을 수행한다.
+
+  - ex) 임의의 셸 스크립트 실행.
+
+- Session manager: 시큐리티 그룹, 인바운드 포트 개방 등을 하지 않아도 셸 접속을 지원.
+
+- Patch manager: Linux 및 Windows 인스턴스 패치 업무의 자동화.
+
+- State manager: 사용자 정의 방식대로 소프트웨어를 가져오고 환경을 설정한다.
+
+- Insight: AWS 리소스 그룹에 따라 카테고리. 태그 키와 태그 밸류를 이용해서 리소스 그룹을 정의한다.
+
+- Inventory manager: OS, 어플레이션 버전 등 인스턴스의 데이터 수집.
+
+- Compliance: 사용자 규정 환경 설정이 인스턴스의 패치 및 상태 광리에 적용되고 있는지 보여줌.
