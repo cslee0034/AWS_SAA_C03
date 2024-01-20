@@ -58,6 +58,8 @@ AWS Certificate Manager의 약자로 AWS에서 제공하는 인증서 관리 서
 
 - EC2와 함께 사용할 수 없다.
 
+- 외부 Certificate Authority (CA)는 자동으로 Rotate할 수 없다.
+
 # Network Firewall
 
 ![Network_Firewall](./pictures/Network_Firewall.png)
