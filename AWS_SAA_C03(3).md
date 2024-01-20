@@ -401,6 +401,24 @@ server-side filtering과 SQL을 통해 보다 적은 데이터를 가져온다.
 
 단일 요청으로 S3객체에 대한 대량 작업을 수행한다. 암호화 되지 않은 객체를 암호화 할 수 있다.
 
+## Object Lock
+
+특정 객체를 고정된 상태로 보관하여 삭제를 방지한다.
+
+- Write Once Read Many (WORM)
+
+## S3 Versioning
+
+S3 버킷 내에 여러 버전을 유지하는 기능.
+
+- 객체를 덮어쓰거나 삭제할 때 이번 저번을 보존할 수 있다.
+
+- 자동 버전 관리 가능.
+
+- 보호 및 복구 가능.
+
+- MFA 삭제 활성화 가능
+
 # Snow Family
 
 ![Snowcone](./pictures/Snowcone.png)
