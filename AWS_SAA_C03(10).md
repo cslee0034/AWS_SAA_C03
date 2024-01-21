@@ -14,7 +14,7 @@ Key Management Service의 약자.
 
 ## Automatic Key rotation
 
-AWS관리형 혹슨 고객 관리면 KMS 키를 1년마다 자동으로 교체할 수 있다. imported KMS Key는 수동 교체만 가능하다.
+AWS관리형 혹은 고객 관리면 KMS 키를 1년마다 자동으로 교체할 수 있다. imported KMS Key는 수동 교체만 가능하다.
 
 ## Multi-Region Keys
 
@@ -52,7 +52,7 @@ AWS Certificate Manager의 약자로 AWS에서 제공하는 인증서 관리 서
 
 - TLS 인증서를 관리하여 HTTPS 암호화를 제공한다.
 
-- plblic 및 pricate TLS 암호화를 지원한다. (public은 무료)
+- public 및 private TLS 암호화를 지원한다. (public은 무료)
 
 - Elactic Load Balancer와 통합.
 
