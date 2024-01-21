@@ -14,7 +14,7 @@ Key Management Service의 약자.
 
 ## Automatic Key rotation
 
-AWS관리형 혹슨 고객 관리면 KMS 키를 1년마다 자동으로 교체할 수 있다. imported KMS Key는 수동 교체만 가능하다.
+AWS관리형 혹은 고객 관리면 KMS 키를 1년마다 자동으로 교체할 수 있다. imported KMS Key는 수동 교체만 가능하다.
 
 ## Multi-Region Keys
 
