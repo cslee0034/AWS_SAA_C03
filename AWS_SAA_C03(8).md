@@ -72,13 +72,13 @@ Elastic Map Reduce의 약자로 완전 관리형 Hadoop cluster이다.
 
 ![Glue](./pictures/Glue.png)
 
-서버리스 관리형 extract, transform, and load(ETL)서비스.
+서버리스 관리형 extract, transform, and load(ETL)서비스. (Lambda 등으로 별도의 처리를 할 필요가 없다)
 
 - 분석을 위한 데이터를 준비하고 변환하는 데 매우 유용한다.
 
 - 데이터를 Parquet 포멧으로 변경할 수 있다.
 
-- Glue Data Catalog는 Glue Data Crawler를 이용해서 S3, RDS, DynamoDB 등의 데이터를 크롤링 하고 ETL 작업에 사용될 메타데이터를 추출한다.
+- Glue Data Catalog는 Glue Data Crawler를 이용해서 S3, RDS, DynamoDB 등의 데이터를 크롤링 하고 ETL 작업에 사용될 메타데이터를 추출한다. (API에서 데이터를 가져오지 않음)
 
 - Athena, Redshift Spectrum, EMR 등이 데이터를 검색할 때 Glue Data Catalog를 이용한다.
 

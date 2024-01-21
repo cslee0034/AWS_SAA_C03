@@ -441,6 +441,10 @@ AWS가 제공하는 완전 관리형 파일 스토리지 서비스로, Windows �
 
 완전 관리형 파일 시스템으로, 고성능 컴퓨팅 워크로드에 최적화 되어 있으다. 빠른 데이터 처리와 대규모 스토리지 작업을 지원한다.
 
+## FSx File Gateway
+
+온프레미스 환경에 배치되어 FSx for Windows File Server 인스턴스에 대한 로컬 캐시를 제공한다.
+
 ## Storage Gateway
 
 ![Storage_Gateway](./pictures/Storage_Gateway.png)
