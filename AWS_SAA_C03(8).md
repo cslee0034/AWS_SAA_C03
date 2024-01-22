@@ -18,7 +18,7 @@ PostgreSQL을 기반으로 하는 OLAP(Online Analytical Processing).
 
 - 대형 데이터 셋을 분석할 수 있는 데이터 웨어하우스이다.
 
-- OLTP 아님.
+- OLTP(Online Transactional Processing) 아님.
 
 - Columnar storage이다. (row base아님)
 
@@ -38,7 +38,7 @@ PostgreSQL을 기반으로 하는 OLAP(Online Analytical Processing).
 
 분산형 검색 및 분석 엔진 서비스.
 
-- Elasticsearch와의 호환성 제공Elasticsearch와의 호환성을 제공한다.
+- Elasticsearch와의 호환성 제공한다.
 
 - 모든 필드, 부분 일치 항목 등을 검색할 수 있다.
 
