@@ -148,4 +148,4 @@ Rabbit MQ, Active MQ의 관리형 메시지 브로커 서비스.
 
 - 큐, 토픽 기능이 있다.
 
-- Active - Standby로 가용성을 늘릴 수 있다.
+- Active - Stand by로 가용성을 늘릴 수 있다.
