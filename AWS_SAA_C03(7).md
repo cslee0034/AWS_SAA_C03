@@ -76,7 +76,7 @@ AWS 환경의 최적화를 돕는 서비스.
 
 ![Systems_Manager](./pictures/Systems_Manager.png)
 
-AWS의 리소스 및 온프레이스 서버의 자동, 수동 작업을 관리한다.
+AWS의 리소스 및 온프레미스 서버의 자동, 수동 작업을 관리한다.
 
 - Automation action: 여러 AWS 서비스에 걸쳐 일상적 운영 작업을 자동화 할 수 있게 지원한다.
 
