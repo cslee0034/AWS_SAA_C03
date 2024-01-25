@@ -306,6 +306,8 @@ Elastic File System의 약자로 여러 개의 EC2에 mount할 수 있는 manage
 
 - Linux base AMI (POSIX)에서만 사용 가능하다.
 
+- Lustre client와의 직접적 통합 미지원
+
 - 유휴 데이터(data at rest)는 KMS를 통해 암호화 된다.
 
 ## EFS Storage Class
