@@ -48,6 +48,8 @@ AWS의 Content Delivery Network(CDN) 서비스이다.
 
 - Client에서 HTTPS을 필수적으로 하도록 Config을 조정할 수 있다.
 
+- Origin Access Identity (OAI)를 통해 CloudFront를 통해서만 S3 버킷 컨텐츠에 접근할 수 있도록 제한할 수 있다.
+
 # Global Accelerator
 
 ![Global_Accelerator](./pictures/Global_Accelerator.png)
