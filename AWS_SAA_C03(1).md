@@ -162,6 +162,20 @@ EC2 인스턴스에 대한 방화벽 역할을 하는 서비스이다.
 
 - 최대 72%까지 할인.
 
+#### Compute Saving Plan
+
+- 가장 flexible 하다.
+
+- 인스턴스 패밀리, 사이즈, OS 등에 관계 없이 사용 가능하며, Lambda, Fargate 등에 대해서도 사용할 수 있다.
+
+- 최대 66% 까지 절약.
+
+#### EC2 Instance Savings Plan
+
+- 특정 인스턴스 패밀리 내에서 가장 높은 할인율을 제공한다.
+
+- Lambda, Fargate에서 사용 불가능. EC2 인스턴스에만 사용 가능하다.
+
 ### Spot Instances
 
 가격은 저렴하지만 작업 중 인스턴스를 잃을 수 있음.
