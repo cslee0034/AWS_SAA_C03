@@ -50,6 +50,8 @@ AWS의 Content Delivery Network(CDN) 서비스이다.
 
 - Origin Access Identity (OAI)를 통해 CloudFront를 통해서만 S3 버킷 컨텐츠에 접근할 수 있도록 제한할 수 있다.
 
+- Field-Level Encryption: HTTP 폼 필드에 들어있는 개별 데이터를 CloudFront 엣지에서 암호화하는 기능.
+
 # Global Accelerator
 
 ![Global_Accelerator](./pictures/Global_Accelerator.png)
