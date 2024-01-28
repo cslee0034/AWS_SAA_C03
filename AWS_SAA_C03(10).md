@@ -86,6 +86,8 @@ Web Application Firewall의 약자로 HTTP트래픽을 필터링 하려 웹 어�
 
 - Web ACL은 CloudFront를 제외하고 Regional하다.
 
+- Layer7(Network Layer)에서 동작.
+
 # Shield
 
 ![Shield](./pictures/Shield.png)
@@ -95,6 +97,8 @@ DDoS 방어 서비스.
 - CloudFront, ELB, Route53 등과 함께 쓰인다.
 
 - 제3자 DNS 서비스와 통합할 수 있다.
+
+- Layer3(Network), Layer4(Transport), Layer7(Network Layer)에서 동작.
 
 ## Shield Standard
 
