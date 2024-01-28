@@ -409,6 +409,10 @@ server-side filtering과 SQL을 통해 보다 적은 데이터를 가져온다.
 
 - Write Once Read Many (WORM)
 
+- Compliance mode: 어떠한 사용자도 객체를 덮어쓰거나 삭제할 수 없다.
+
+- Governance mode: 특별한 권한이 없는한 객체를 덮어쓰거나 삭제할 수 없다.
+
 ## S3 Versioning
 
 S3 버킷 내에 여러 버전을 유지하는 기능.
