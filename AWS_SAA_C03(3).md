@@ -118,6 +118,8 @@ AWS의 독점 기술로, 클라우드에 최적화된 RDB의 일종이다.
 
 - TTL 기능과 결합하여 session 저장소로 사용할 수 있다.
 
+- attribute를 이용하여 일정 기간 이후 자동으로 삭제되는 TTL 기능을 이용할 수 있다.
+
 - DynamoDB와 호환 되는 DAX cluster를 read cache로 사용할 수 있다. microsecond read latency를 가짐. (DynamoDB Accelerator, 완전 관리형 캐시 서비스)
 
 - 보안, 인증, 인가 모두 IAM을 통해 이루어짐.
@@ -482,3 +484,4 @@ FTP 프로토콜을 사용하여 Amazon S3 또는 Amazon EFS와의 파일 전송
 - 복제 작업 cron 가능.
 
 - 파일 권한 및 메타데이터가 보존된다.
+  ㄷ
