@@ -367,8 +367,6 @@ JSON 기반의 S3 정책이다.
 
 - 비용: 작은 월별 모니터링 및 자동 계층 이동 비용이 든다.
 
-- 검색 비용 없음
-
 - Frequent Access tier(기본형) -> Infrequent Access tier -> Archive Instant Access tier -> Archive Access tier -> Deep Archive Access tier
 
 ## Performance
