@@ -74,7 +74,7 @@ VPC에서 사용자 지정 방화벽 규칙을 만들어 트래픽 검사와 필
 
 ![WAF](./pictures/WAF.png)
 
-Web Application Firewall의 약자로 HTTP트래픽을 필터링 하려 웹 어플리케이션을 보호한다.
+Web Application Firewall의 약자로 HTTP트래픽을 필터링 하여 웹 어플리케이션을 보호한다.
 
 - ALB, API gateway, CloudFront, AppSync GraphQL API, Cognito User Pool과 통합된다.
 
