@@ -322,7 +322,9 @@ Elastic File System의 약자로 여러 개의 EC2에 mount할 수 있는 manage
 
 - Lustre client와의 직접적 통합 미지원
 
-- 유휴 데이터(data at rest)는 KMS를 통해 암호화 된다.
+- EFS 생성시 암호화 활성화 옵션을 선택하면 유휴 데이터(data at rest)를 KMS를 통해 암호화 된다.
+
+- 기능을 활성화 하면 data in transit도 암호화가 가능하다.
 
 ## EFS Storage Class
 
