@@ -10,6 +10,8 @@
 
 - 처리량 및 대기열 메시지 수 무제한.
 
+- DLQ(Dead Letter Queue)를 이용해서 전송에 실패한 메시지에 대해 처리할 수 있다.
+
 ## Producing & Consuming Messages
 
 Producing:
