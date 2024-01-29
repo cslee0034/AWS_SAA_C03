@@ -54,7 +54,7 @@
 
 ![SageMaker](./pictures/SageMaker.png)
 
-머신러닝 모뎅을 쉽게 구축하고 운영할 수 있도록 하는 서비스.
+머신러닝 모델을 쉽게 구축하고 운영할 수 있도록 하는 서비스.
 
 # Forecast
 
