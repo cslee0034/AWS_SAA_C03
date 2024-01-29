@@ -24,6 +24,8 @@ PostgreSQL을 기반으로 하는 OLAP(Online Analytical Processing).
 
 - SQL 기반이다.
 
+- Fine-grained Row-Level Security(RLS) access control을 제공한다.
+
 ## Redshift Cluster
 
 - Leader node: 쿼리 계획, 결과 집계 용도.
