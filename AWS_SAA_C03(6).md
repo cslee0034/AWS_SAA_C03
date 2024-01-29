@@ -72,7 +72,7 @@ Elastic Kubernetes Service의 약자로 AWS에서 제공하는 관리형 Kuberne
 
 코드 저장소에서 앱 소스를 가져와 자동화된 빌드 및 배포 프로세스로 서버리스 어플리케이션을 배포할 수 있는 완전 관리형 서비스
 
-- Docker 컨테이너 혹은 코드를 가지고 vCPU나 RAN, Auto Sacleing, Health Check 등의 설정을 하면 다음 작업은 자동으로 수행된다.
+- Docker 컨테이너 혹은 코드를 가지고 vCPU나 RAM, Auto Sacleing, Health Check 등의 설정을 하면 다음 작업은 자동으로 수행된다.
 
 # Serverless in AWS
 
