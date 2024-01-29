@@ -431,6 +431,16 @@ S3 버킷 내에 여러 버전을 유지하는 기능.
 
 AWS Snow Family는 물리적인 데이터 전송 솔루션의 모음이다.
 
+- Snowcone: 8TB SSD 스토리지 제공
+
+- Snowball: Deprecated
+
+  - Snowball Edge Storage Optimized: 80TB HDD or 210TB NVMe(only supports data migration use cases) + vCPU 40 + 32GiB Memory
+ 
+  - Snowball Edge Compute Optimized: 42TB HDD + 7.68TB NVMe + vCPU 52 + 208GiB Memory + GPU
+ 
+- Snowmobile: 최대 100PB
+
 # FSx
 
 ![FSx](./pictures/FSx.png)
