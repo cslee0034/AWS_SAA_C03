@@ -48,6 +48,8 @@ AWS 리소스의 규정 준수를 감사하고 기록하는 서비스.
 
 - 구체적인 구성 관리, 변경 추적, 규칙 위반 구성 변경 감지.
 
+- 어떠한 행위를 하지 못하도록 막는 기능은 없다.
+
 # Trusted Advisor
 
 ![Trusted_Advisor](./pictures/Trusted_Advisor.png)
