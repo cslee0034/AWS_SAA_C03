@@ -38,6 +38,10 @@ AWS 계정에 대한 governance, compliance, audit기능을 제공한다.
 
 - 모든 리전 또는 단일 리전에 적용 가능하다.
 
+- 90일 이상 보관하려면 CludWatch Logs나 S3에 보관해야 한다.
+
+- S3에 오브젝트 레벨 활동(put, delete, get 등)은 기본적으로 기록하지 않지만 기록하도록 활성화 할 수 있다.
+
 # Config
 
 ![Config](./pictures/Config.png)
