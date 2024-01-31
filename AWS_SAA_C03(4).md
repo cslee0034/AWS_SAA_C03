@@ -34,6 +34,74 @@ Public Hosted Zone: 인터넷에서의 트래픽에 응답할 수 있다.
 
 Private Hosted Zone: 하나 혹은 그 이상의 VPCs에서 온 요청에 응답할 수 있다.
 
+## Routing Policies
+
+### Simple
+
+기본 라우팅 정책으로, 단일 리소스에 대한 DNS 쿼리에 사용된다.
+
+- 같은 record에 multi value 값으로 route53이 응답하면 client에서 하나를 임의로 선택한다.
+
+- Alias와 함께 사용되면 하나의 AWS 리소스만을 대상으로 지정할 수 있다.
+
+- Health check와 연동할 수 없다.
+
+### Weighted
+
+서로 다른 리소스로 트래픽을 가중치에 따라 분산시키는 데 사용된다.
+
+- Health check와 연동할 수 있다.
+
+### Failover
+
+주요 리소스에 장애가 발생했을 때 백업 리소스로 트래픽을 라우팅하는 데 사용된다.
+
+- Primary region의 health check가 unhealty라면 자동으로 Secondary region으로 연결한다.
+
+### Latency-based
+
+사용자에게 가장 낮은 지연 시간을 제공하는 리소스로 트래픽을 라우팅한다.
+
+- Latency는 유저와 AWS Region이 연결되는 시간을 기준으로 측정된다.
+
+- Health check와 연동할 수 있다.
+
+### Geolocation
+
+사용자의 지리적 위치에 따라 트래픽을 라우팅한다.
+
+- 매칭되는 위치가 없을 경우 연결하는 default record를 설정해야 한다.
+
+- Health check와 연동할 수 있다.
+
+### Geoproximity (Traffic Flow 사용시)
+
+사용자와 리소스 사이의 지리적 거리를 기반으로 트래픽을 라우팅힌다.
+
+- Bias(편향값)을 기준으로 트래픽을 특정 위치로 더 많이 가도록 한다.
+
+- Route 53의 Traffic Flow 기능을 사용할 때 사용 가능하다.
+
+- 한 리전에서 다른 리전으로 트래픽을 보낼 떄 유용하다.
+
+### IP-based
+
+클라이언트의 IP 주소를 기반으로 라우팅 한다.
+
+- CIDR 블럭을 기반으로 해당하는 IP로 라우팅 한다.
+
+### Multi-Value Answer
+
+여러 리소스에 대한 DNS 응답을 제공하여 각 리소스의 가용성을 개선한다.
+
+- 트래픽을 다중 리소스로 라우팅할 때 사용한다.
+
+- ELB와 유사해 보이지만 ELB의 대체가 아니며, 클라이언트 측의 로드벨런싱이다.
+
+- 최대 8개의 값을 리턴하며 클라이언트는 임의로 접속한다.
+
+- Health check와 연동되어 어떠한 리소스가 정상 상태인지 확인할 수 있으며 이를 기반으로 비정상 리소스는 라우팅 할 곳에서 제외한다. (단순 라우팅에서는 확인 불가능)
+
 # CloudFront
 
 ![CloudFront](./pictures/CloudFront.png)
