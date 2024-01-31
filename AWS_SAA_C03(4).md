@@ -16,6 +16,10 @@ AWS에서 제공하는 DNS(Domain Name System) 서비스.
 
 - CNAME: hostname을 다른 hostname에 매핑 한다.
 
+- Alias: hostname을 AWS 리소스에 매핑한다.
+
+  - Target: ELB, ClourFront, API gateway, EB, S3 website, VPC interface endpoint, Global Accelerator, Route53 record.
+
 - NS: 도메인에 대한 트래픽이 어떻게 라우팅될지를 제어하는 서버의 집합이다.
 
 - CNAME vs Alias:
