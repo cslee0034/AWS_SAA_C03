@@ -324,6 +324,22 @@ Network Access Control List의 약자. 트레픽 제어 방화벽의 역할을 �
 
 - ENI는 다른 VPC 등에서 엑세스가 필요할 경우 선호된다.
 
+### Gateway VPC Endpoint
+
+- 사용 서비스: S3, Amazon DynamoDB.
+
+- 작동 방식: VPC의 라우팅 테이블에 경로를 추가하여 AWS 서비스와의 프라이빗 네트워크 경로를 직접 제공한다.
+
+- 비용: 추가 요금 없음
+
+### Interface VPC Endpoint
+
+- 사용 서비스: AWS 서비스 및 VPC 엔드포인트 서비스에 다양하게 사용된다.
+
+- 작동 방식: VPC 내에 프라이빗 IP 주소를 가진 Elastic Network Interface(ENI)를 생성하고, 이를 통해 서비스와 통신한다.
+
+- 비용: 시간당 요금과 데이터 처리 요금이 발생할 수 있다.
+
 ## VPC Flow Logs
 
 ![VPC_Flow_Logs](./pictures/VPC_Flow_Logs.png)
