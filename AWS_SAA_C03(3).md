@@ -475,6 +475,12 @@ on-premises data와 cloud data 사이의 가교 역할을 하는 서비스.
 
 로컬 캐시를 지원하여 자주 사용하는 서비스에 대한 빠른 엑세스를 제공한다.
 
+- File gateway: NFS/SMB 프로토콜을 사용하여 Amazon S3에서 객체를 저장 및 검색한다.
+
+- Volume gateway: iSCSI를 사용한다. 캐싱 및 저장의 용도로 EBS를 사용한다. 또힌 Amazon S3에 백업을 저장한다. (S3에 직접적 검색 등의 기능 없다)
+
+- Tape gateway: 클라우드 기반 가상 테이프 스토리지를 통해 데이터 백업 기능.
+
 # Transfer Family
 
 ![Transfer_Family](./pictures/Transfer_Family.png)
