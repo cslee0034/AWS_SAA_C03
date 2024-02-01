@@ -14,6 +14,8 @@ Relational Database Service의 약자로 AWS가 관리하는 관계형 데이터
 
 - 다중 AZ 설정이 가능하다.
 
+- 다중 리전에서 활용하기 위해서는 Read Replica를 사용해야 한다.
+
 - EBS의 위에서 동작한다.
 
 - SSH 접속이 불가능하다.
@@ -440,9 +442,9 @@ AWS Snow Family는 물리적인 데이터 전송 솔루션의 모음이다.
 - Snowball: Deprecated
 
   - Snowball Edge Storage Optimized: 80TB HDD or 210TB NVMe(only supports data migration use cases) + vCPU 40 + 32GiB Memory
- 
+
   - Snowball Edge Compute Optimized: 42TB HDD + 7.68TB NVMe + vCPU 52 + 208GiB Memory + GPU
- 
+
 - Snowmobile: 최대 100PB
 
 # FSx
