@@ -417,7 +417,7 @@ server-side filtering과 SQL을 통해 보다 적은 데이터를 가져온다.
 
 - Compliance mode: 어떠한 사용자도 객체를 덮어쓰거나 삭제할 수 없다.
 
-- Governance mode: 특별한 권한이 없는한 객체를 덮어쓰거나 삭제할 수 없다.
+- Governance mode: 특별한 권한이 없는한 객체를 덮어쓰거나 삭제할 수 없다. (권한이 있다면 가능)
 
 ## S3 Versioning
 
