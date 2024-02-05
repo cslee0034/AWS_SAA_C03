@@ -22,6 +22,8 @@ AWS의 모든 서비스에 대한 지표를 제공하는 서비스.
 
 - 대시보드 공유 기능을 통해 계정을 생성하지 않고 유저가 대시보드에 접근할 수 있다 (이후 유저 고유의 비밀번호 생성)
 
+- Metric Streams: Amazon CloudWatch에서 생성된 메트릭을 실시간으로 다른 서비스로 전송할 수 있는 기능
+
 # EventBridge
 
 ![EventBridge](./pictures/EventBridge.png)
