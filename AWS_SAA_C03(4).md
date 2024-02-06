@@ -176,6 +176,8 @@ AWS의 서버리스 서비스로, REST API를 생성할 수 있다.
 
 - 어떠한 AWS 서비스든 직접 접근하도록 할 수 있다.
 
+- API 호출을 기준으로 비용 청구.
+
 ## API Gateway EndPoint
 
 1. Edge-Optimized EndPoint
