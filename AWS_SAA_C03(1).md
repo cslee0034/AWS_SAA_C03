@@ -228,11 +228,11 @@ EC2를 여러 파티션으로 나누어 각 파티션의 인스턴스가 서로 
 
 가상의 네트워크 카드. AZ에 종속된다.
 
-- Public AMI, Custom AMI, Marketplace AMI 등이 있다.
-
 ## AMI
 
 Amazon Machine Image의 약자로, EC2의 Customization이다.
+
+- Public AMI, Custom AMI, Marketplace AMI 등이 있다.
 
 ## Instance Store
 
@@ -314,7 +314,7 @@ Elastic File System의 약자로 여러 개의 EC2에 mount할 수 있는 manage
 
 - 다중 AZ의 EC2와 연결이 가능하다.
 
-- 데이터를 여러 가용 영역(AZ)에 걸쳐 자동으로 복제한다.
+- 데이터를 여러 가용 영역(AZ)에 걸쳐 자동으로 복제한다. (built-in redundancy)
 
 - 가용성이 높고, 확장성이 높고, 가격이 비싸다.
 

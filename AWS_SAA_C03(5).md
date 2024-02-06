@@ -118,7 +118,9 @@ Event Recieve
 
 거의 모든 Data Producer에서 데이터를 가져올 수 있는 완전 관리 서비스.
 
-- Lambda를 이용해서 데이터를 가공할 수 있다.
+- Lambda를 이용해서 데이터를 가공할 수 있다. (소스 레코드 변형 가능)
+
+- 레코드 형식 정보를 JSON에서 Apache Parquet 등으로 변환할 수 있다.
 
 - 완전 관리 서비스로 데이터를 쓰는 코드를 작성할 필요가 없다.
 
@@ -143,6 +145,10 @@ Event Recieve
 ![Kinesis_Data_Analytics](./pictures/Kinesis_Data_Analytics.png)
 
 스트리밍 데이터를 분석하는 데 사용되는 완전 관리형 서비스.
+
+- SQL 또는 Apache Flink로 데이터 스트림 분석.
+
+- 실시간 대응, 실시간 모니터링, 실시간 대시보드 및 알람 등을 구현할 수 있다.
 
 # Amazon MQ
 
