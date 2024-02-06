@@ -471,6 +471,14 @@ AWS가 제공하는 완전 관리형 파일 스토리지 서비스로, Windows �
 
 온프레미스 환경에 배치되어 FSx for Windows File Server 인스턴스에 대한 로컬 캐시를 제공한다.
 
+## FSx for NetApp ONTAP
+
+ONTAP 파일 시스템을 기반으로 하는 완전 관리형 파일 스토리지 서비스.
+
+- NFS, SMB, iSCSI 등 다양한 파일 공유 프로토콜을 지원한다.
+
+- 다양한 운영 체제와 애플리케이션에서 사용할 수 있다. (리눅스, 윈도우, VMware 등 다양한 환경에서의 파일 공유가 가능)
+
 ## Storage Gateway
 
 ![Storage_Gateway](./pictures/Storage_Gateway.png)
