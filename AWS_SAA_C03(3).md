@@ -26,6 +26,8 @@ Relational Database Service의 약자로 AWS가 관리하는 관계형 데이터
 
 - 인스턴스 클래스를 바꾸는 것으로 메모리 집약적 작업 성능을 향상시킬 수 있다.
 
+- Storage Auto Scaling을 통해 사용 중인 스토리지가 특정 임계값에 도달하면 자동으로 스토리지 용량을 확장할 수 있다.
+
 ## Read Replicas
 
 - 최대 15개의 읽기 전용 복제본을 가질 수 있다.
