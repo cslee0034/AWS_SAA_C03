@@ -8,15 +8,15 @@ IAM이란 Identity and Access Management의 약자로 AWS 리소스를 제어하
 
 user에게만 권한을 부여하는 것이 아니라 EC2와 같은 인스턴스에도 접근 권한 등을 부여할 수 있다.
 
+- IAM Policy: 권한을 정의하는 문서.
+
+- IAM Role: 그러한 권한을 다른 사용자나 서비스에 임시로 할당하는 메커니즘.
+
+- ex: aws-ec2-role를 생성-> S3-full-access-policy를 해당 role에 포함시킴 -> EC2에 aws-ec2-role 적용
+
 ## Users
 
 물리적 유저와 연동되며 AWS console을 위한 비밀번호를 가지고 있다.
-
-## Roles
-
-EC2나 AWS service를 위한 access 권한 관리 policy의 집합.
-
-- EC2 Instance Roles와 같은 형태로 되어 있다.
 
 ## Policies
 
@@ -25,6 +25,12 @@ user나 group에 대한 권한을 부여하는 document.
 - JSON 형태로 되어 있다.
 
 - least privilege principle을 적용하여 유저에게 필요 이상의 권한을 부여하지 않는 것이 원칙이다.
+
+## Roles
+
+EC2나 AWS service를 위한 access 권한 관리 policy의 집합.
+
+- EC2 Instance Roles와 같은 형태로 되어 있다.
 
 ## Groups
 
