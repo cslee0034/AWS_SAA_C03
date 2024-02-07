@@ -194,7 +194,7 @@ AWS의 서버리스 서비스로, REST API를 생성할 수 있다.
 
 ### Edge-Optimized (default)
 
-- 글로벌 클라이언트를 위한 서비스
+- 글로벌 클라이언트를 위한 서비스.
 
 - CloudFront Edge locations를 통해 요청이 가능하다.
 
@@ -332,7 +332,7 @@ Network Access Control List의 약자. 트레픽 제어 방화벽의 역할을 �
 
 - 작동 방식: VPC의 라우팅 테이블에 경로를 추가하여 AWS 서비스와의 프라이빗 네트워크 경로를 직접 제공한다.
 
-- 비용: 추가 요금 없음
+- 비용: 추가 요금 없음.
 
 ### Interface VPC Endpoint
 
@@ -368,7 +368,7 @@ Network Access Control List의 약자. 트레픽 제어 방화벽의 역할을 �
 
 VPC의 트래픽을 다른 대상으로 복제하는 기능을 제공한다.
 
-- 트레픽 자체 필터링이나 수정 기능 제공하지 않는다.
+- 트래픽 자체 필터링이나 수정 기능 제공하지 않는다.
 
 # VPC의 연결
 
@@ -396,7 +396,15 @@ Virtual Private Gateway (VGW) 서비스. 기업이나 조직의 본사와 지사
 
 - 두 개 이상의 서로 다른 위치(사이트)의 네트워크를 연결하는 VPN(Virtual Private Network) 방식을 지칭한다.
 
-### Transit Gateway (TGW)
+- VPN방식: 인터넷을 통해 두 네트워크 간의 암호화된 터널을 설정하여 데이터를 안전하게 전송.
+
+## VPN Gateway (VGW)
+
+![VPN_Gateway](./pictures/VPN_Gateway.png)
+
+사용자의 온프레미스 네트워크와 AWS의 가상 프라이빗 클라우드(VPC) 간에 안전한 연결을 설정하는 서비스.
+
+## Transit Gateway (TGW)
 
 ![Transit_Gateway](./pictures/Transit_Gateway.png)
 
@@ -414,12 +422,6 @@ Virtual Private Gateway (VGW) 서비스. 기업이나 조직의 본사와 지사
 
 - 특정 트래픽 검사 기능 지원하지 않는다.
 
-### VPN Gateway (VGW)
-
-![VPN_Gateway](./pictures/VPN_Gateway.png)
-
-사용자의 온프레미스 네트워크와 AWS의 가상 프라이빗 클라우드(VPC) 간에 안전한 연결을 설정하는 서비스.
-
 ## Direct Connect (DX)
 
 ![DX](./pictures/DX.png)
@@ -435,3 +437,11 @@ Virtual Private Gateway (VGW) 서비스. 기업이나 조직의 본사와 지사
 - IPv4 및 IPv6 모두 지원.
 
 - 새로운 연결을 설정하는 데 리드 타임이 1개월 이상 걸리는 경우가 많다.
+
+## Virtual Private Gateway
+
+기업의 데이터 센터와 AWS VPC 간에 안전한 VPN 연결을 설정하는 것을 도와주는 게이트웨이.
+
+- 주로 AWS Direct Connect와 함께 사용된다.
+
+- 온프레미스 환경과 AWS 클라우드 간에 전용의 안전한 연결을 제공한다.
