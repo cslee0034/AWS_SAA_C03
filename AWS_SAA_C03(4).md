@@ -348,9 +348,9 @@ AWS 내의 Private IPv4 혹은 IPv6를 통해 둘 혹은 그 이상의 VPC를 �
 
 - EC2 인스턴스가 서로 통신할 수 있도록 VPC 서브넷의 라우팅 테이블을 업데이트 해야 한다.
 
-## VPC Endpoints (AWS PrivateLink)
+## AWS PrivateLink
 
-![VPC_Endpoints](./pictures/VPC_Endpoints.png)
+![VPC_PrivateLink](./pictures/VPC_Endpoints.png)
 
 !! 인터넷을 거치지 않고 !! Private Network를 사용하여 VPC 내부에서 !! AWS 서비스, 내부 서비스, 그리고 타사 서비스!! 에 연결한다.
 
@@ -363,6 +363,12 @@ AWS 내의 Private IPv4 혹은 IPv6를 통해 둘 혹은 그 이상의 VPC를 �
 - 게이트웨이는 무료이고, ENI는 유료이기 떄문에 가능하면 게이트웨이를 사용하는 편이 좋다.
 
 - ENI는 다른 VPC 등에서 엑세스가 필요할 경우 선호된다.
+
+### VPC EndPoint
+
+Amazon VPC를 AWS 서비스와 VPC 엔드포인트 서비스에 연결하는 가상 디바이스.
+
+- VPC와 AWS 서비스 간의 퍼블릭 인터넷 또는 가상 프라이빗 게이트웨이를 사용하지 않고도 프라이빗 연결을 할 수 있다.
 
 ### Gateway VPC Endpoint
 
