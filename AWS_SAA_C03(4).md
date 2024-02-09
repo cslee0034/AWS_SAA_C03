@@ -310,6 +310,44 @@ Network Access Control List의 약자. 트레픽 제어 방화벽의 역할을 �
 
 - 서브넷 레벨에서 특정 IP를 차단하는데 유용하다.
 
+## VPC Flow Logs
+
+![VPC_Flow_Logs](./pictures/VPC_Flow_Logs.png)
+
+인터페이스로 들어오는 IP 트래픽에 대한 정보를 캡쳐하는 서비스.
+
+- 연결 문제를 모니터링하는 데 도움이 된다.
+
+- Flow logs는 S3, CloudWatch Logs, and Kinesis Data Firehose로 전송 가능.
+
+- ELB, RDS, ElastiCache, Redshift, NAT gateway, Transit gateway 등의 네트워크 정보도 캡쳐 가능.
+
+## Traffic Mirroring
+
+![Traffic_Mirroring](./pictures/Traffic_Mirroring.png)
+
+VPC의 트래픽을 다른 대상으로 복제하는 기능을 제공한다.
+
+- 트래픽 자체 필터링이나 수정 기능 제공하지 않는다.
+
+# VPC의 연결
+
+## VPC Peering
+
+![VPC_Peering](./pictures/VPC_Peering.png)
+
+AWS 내의 Private IPv4 혹은 IPv6를 통해 둘 혹은 그 이상의 VPC를 연결하는 서비스.
+
+- 두 개의 Virtual Private Clouds (VPC) 간에 네트워크 연결을 설정할 수 있게 해주는 기능을 한다.
+
+- 동일한 네트워크에 있는 것처럼 동작하도록 만든다.
+
+- CIDR이 중복되면 안된다.
+
+- 1:1 연결로 서로 통신해야 하는 VPC마다 설정해야 한다. (transitive하지 않다)
+
+- EC2 인스턴스가 서로 통신할 수 있도록 VPC 서브넷의 라우팅 테이블을 업데이트 해야 한다.
+
 ## VPC Endpoints (AWS PrivateLink)
 
 ![VPC_Endpoints](./pictures/VPC_Endpoints.png)
@@ -342,53 +380,15 @@ Network Access Control List의 약자. 트레픽 제어 방화벽의 역할을 �
 
 - 비용: 시간당 요금과 데이터 처리 요금이 발생할 수 있다.
 
-## VPC Flow Logs
+## Virtual Private Gateway
 
-![VPC_Flow_Logs](./pictures/VPC_Flow_Logs.png)
+기업의 데이터 센터와 AWS VPC 간에 안전한 VPN 연결을 설정하는 것을 도와주는 게이트웨이.
 
-인터페이스로 들어오는 IP 트래픽에 대한 정보를 캡쳐하는 서비스.
+- 주로 AWS Direct Connect와 함께 사용된다.
 
-- 연결 문제를 모니터링하는 데 도움이 된다.
+- 온프레미스 환경과 AWS 클라우드 간에 전용의 안전한 연결을 제공한다.
 
-- Flow logs는 S3, CloudWatch Logs, and Kinesis Data Firehose로 전송 가능.
-
-- ELB, RDS, ElastiCache, Redshift, NAT gateway, Transit gateway 등의 네트워크 정보도 캡쳐 가능.
-
-## VPN CloudHub
-
-서로 다른 위치 간의 기본 또는 보조 네트워크 연결을 위한 저렴한 허브 앤 스포크 모델. (VPN 전용)
-
-- VPN 연결이 '여러 개'인 경우 여러 사이트 간 보안 통신 제공.
-
-- VPN 연결이므로 공용 인터넷을 통과한다.
-
-## Traffic Mirroring
-
-![Traffic_Mirroring](./pictures/Traffic_Mirroring.png)
-
-VPC의 트래픽을 다른 대상으로 복제하는 기능을 제공한다.
-
-- 트래픽 자체 필터링이나 수정 기능 제공하지 않는다.
-
-# VPC의 연결
-
-## VPC Peering
-
-![VPC_Peering](./pictures/VPC_Peering.png)
-
-AWS 내의 Private IPv4 혹은 IPv6를 통해 둘 혹은 그 이상의 VPC를 연결하는 서비스.
-
-- 두 개의 Virtual Private Clouds (VPC) 간에 네트워크 연결을 설정할 수 있게 해주는 기능을 한다.
-
-- 동일한 네트워크에 있는 것처럼 동작하도록 만든다.
-
-- CIDR이 중복되면 안된다.
-
-- 1:1 연결로 서로 통신해야 하는 VPC마다 설정해야 한다. (transitive하지 않다)
-
-- EC2 인스턴스가 서로 통신할 수 있도록 VPC 서브넷의 라우팅 테이블을 업데이트 해야 한다.
-
-## Site-to-Site VPN
+### Site-to-Site VPN
 
 ![Site-to-Site_VPN](./pictures/Site-to-Site_VPN.png)
 
@@ -403,6 +403,30 @@ Virtual Private Gateway (VGW) 서비스. 기업이나 조직의 본사와 지사
 ![VPN_Gateway](./pictures/VPN_Gateway.png)
 
 사용자의 온프레미스 네트워크와 AWS의 가상 프라이빗 클라우드(VPC) 간에 안전한 연결을 설정하는 서비스.
+
+## Direct Connect (DX)
+
+![DX](./pictures/DX.png)
+
+원격 네트워크 사용자에게 전용 개인 연결을 제공한다.
+
+- Direct Connect locations과의 전용 연결을 설정해야 한다.
+
+- Virtual Private Gateway를 VPC 내에 설정해야 한다.
+
+- 온프레미스 + 클라우드의 하이브리드 환경에 사용된다.
+
+- IPv4 및 IPv6 모두 지원.
+
+- 새로운 연결을 설정하는 데 리드 타임이 1개월 이상 걸리는 경우가 많다.
+
+## VPN CloudHub
+
+서로 다른 위치 간의 기본 또는 보조 네트워크 연결을 위한 저렴한 허브 앤 스포크 모델. (VPN 전용)
+
+- VPN 연결이 '여러 개'인 경우 여러 사이트 간 보안 통신 제공.
+
+- VPN 연결이므로 공용 인터넷을 통과한다.
 
 ## Transit Gateway (TGW)
 
@@ -421,27 +445,3 @@ Virtual Private Gateway (VGW) 서비스. 기업이나 조직의 본사와 지사
 - 허브 앤 스포크 모델을 사용한다. (모든 네트워크 자원이 Transit Gateway(허브)에 연결되며, 이 허브를 통해 다른 네트워크(스포크)와 통신)
 
 - 특정 트래픽 검사 기능 지원하지 않는다.
-
-## Direct Connect (DX)
-
-![DX](./pictures/DX.png)
-
-원격 네트워크 사용자에게 전용 개인 연결을 제공한다.
-
-- Direct Connect locations과의 전용 연결을 설정해야 한다.
-
-- Virtual Private Gateway를 VPC 내에 설정해야 한다.
-
-- 온프레미스 + 클라우드의 하이브리드 환경에 사용된다.
-
-- IPv4 및 IPv6 모두 지원.
-
-- 새로운 연결을 설정하는 데 리드 타임이 1개월 이상 걸리는 경우가 많다.
-
-## Virtual Private Gateway
-
-기업의 데이터 센터와 AWS VPC 간에 안전한 VPN 연결을 설정하는 것을 도와주는 게이트웨이.
-
-- 주로 AWS Direct Connect와 함께 사용된다.
-
-- 온프레미스 환경과 AWS 클라우드 간에 전용의 안전한 연결을 제공한다.
