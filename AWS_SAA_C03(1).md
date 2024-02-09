@@ -32,6 +32,29 @@ EC2나 AWS service를 위한 access 권한 관리 policy의 집합.
 
 - EC2 Instance Roles와 같은 형태로 되어 있다.
 
+### Trust policy
+
+다른 AWS 계정, IAM 사용자, IAM 서비스 등이 해당 역할을 맡을 수 있는(assume) 권한을 부여한다.
+
+- Principal이 Action을 할 수 있도록 허용한다.
+
+```JSON
+{
+  "Version": "2012-10-17",
+  "Statement": [
+    {
+      "Effect": "Allow",
+      "Principal": {
+        "Service": "lambda.amazonaws.com"
+      },
+      "Action": "sts:AssumeRole"
+    }
+  ]
+}
+```
+
+Lambda가 sts의 역할 권한을 가지고 AWS 리소스에 액세스할 수 있다.
+
 ## Groups
 
 여러 user들을 묶어 Access 권한 부여 및 관리하는 것.
