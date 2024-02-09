@@ -382,6 +382,8 @@ AWS 내의 Private IPv4 혹은 IPv6를 통해 둘 혹은 그 이상의 VPC를 �
 
 ## Virtual Private Gateway
 
+![Site-to-Site_VPN](./pictures/Site-to-Site_VPN.png)
+
 기업의 데이터 센터와 AWS VPC 간에 안전한 VPN 연결을 설정하는 것을 도와주는 게이트웨이.
 
 - 주로 AWS Direct Connect와 함께 사용된다.
@@ -389,8 +391,6 @@ AWS 내의 Private IPv4 혹은 IPv6를 통해 둘 혹은 그 이상의 VPC를 �
 - 온프레미스 환경과 AWS 클라우드 간에 전용의 안전한 연결을 제공한다.
 
 ### Site-to-Site VPN
-
-![Site-to-Site_VPN](./pictures/Site-to-Site_VPN.png)
 
 Virtual Private Gateway (VGW) 서비스. 기업이나 조직의 본사와 지사, 또는 데이터 센터와 클라우드 리소스 간의 안전한 연결을 위해 사용된다.
 
