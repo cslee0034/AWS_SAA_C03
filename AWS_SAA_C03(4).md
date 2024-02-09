@@ -382,7 +382,7 @@ AWS 내의 Private IPv4 혹은 IPv6를 통해 둘 혹은 그 이상의 VPC를 �
 
 ## Virtual Private Gateway
 
-![Site-to-Site_VPN](./pictures/Site-to-Site_VPN.png)
+![VPN_Gateway](./pictures/VPN_Gateway.png)
 
 !! 인터넷을 거쳐 !! !! 기업의 데이터 센터와 AWS VPC 간에 안전한 VPN 연결 !! 을 설정하는 것을 도와주는 게이트웨이.
 
@@ -397,12 +397,6 @@ Virtual Private Gateway (VGW) 서비스. 기업이나 조직의 본사와 지사
 - 두 개 이상의 서로 다른 위치(사이트)의 네트워크를 연결하는 VPN(Virtual Private Network) 방식을 지칭한다.
 
 - VPN방식: 인터넷을 통해 두 네트워크 간의 암호화된 터널을 설정하여 데이터를 안전하게 전송.
-
-## VPN Gateway (VGW)
-
-![VPN_Gateway](./pictures/VPN_Gateway.png)
-
-사용자의 온프레미스 네트워크와 AWS의 가상 프라이빗 클라우드(VPC) 간에 안전한 연결을 설정하는 서비스.
 
 ## Direct Connect (DX)
 
