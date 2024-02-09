@@ -350,7 +350,7 @@ AWS 내의 Private IPv4 혹은 IPv6를 통해 둘 혹은 그 이상의 VPC를 �
 
 ## AWS PrivateLink
 
-![VPC_PrivateLink](./pictures/VPC_Endpoints.png)
+![VPC_PrivateLink](./pictures/VPC_PrivateLink.png)
 
 !! 인터넷을 거치지 않고 !! Private Network를 사용하여 VPC 내부에서 !! AWS 서비스, 내부 서비스, 그리고 타사 서비스!! 에 연결한다.
 
