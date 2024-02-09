@@ -114,6 +114,18 @@ Elastic Kubernetes Service의 약자로 AWS에서 제공하는 관리형 Kuberne
 
 - 비동기 작업에 효율적이다.
 
+## Lambda@edge
+
+- Amazon CloudFront와 통합되어 작동하는 AWS Lambda의 기능.
+
+- 사용자에게 더 가까운 위치에서 코드를 실행함으로써 응답 시간을 단축하고 사용자 경험을 개선할 수 있다.
+
+## Provisioned Concurrency
+
+Lambda 함수가 즉시 응답할 수 있도록 미리 warm 상태의 함수 인스턴스를 준비해두는 기능.
+
+- 추가 요금이 부과된다.
+
 ## Lambda Limites
 
 ### Execution
@@ -137,9 +149,3 @@ Elastic Kubernetes Service의 약자로 AWS에서 제공하는 관리형 Kuberne
 - 시작시 /tmp 파일을 다른 파일을 불러올 수 있다.
 
 - 환경 변수는 4KB까지 제한.
-
-## Lambda@edge
-
-- Amazon CloudFront와 통합되어 작동하는 AWS Lambda의 기능.
-
-- 사용자에게 더 가까운 위치에서 코드를 실행함으로써 응답 시간을 단축하고 사용자 경험을 개선할 수 있다.
