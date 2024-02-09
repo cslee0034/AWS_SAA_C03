@@ -80,15 +80,15 @@ Consuming
 
 Event Producing
 
+- CouldWatch, AWS Budget, ASG, CloudFormation, S3, RDS Event, Lambda 등에서 지정된 SNS 주제로 알림을 보낼 수 있다.
+
+Event Recieving
+
 - 메시지를 SQS 대기열로 직접 보낼 수 있다.
 
 - Lambda에 데이터를 보내 처리할 수 있다.
 
 - Kinesis Data Firehose로 데이터를 보내 S3나 Redshift로 보낼 수 있다.
-
-Event Recieve
-
-- CouldWatch, AWS Budget, ASG, CloudFormation, S3, RDS Event, Lambda 등에서 지정된 SNS 주제로 알림을 보낼 수 있다.
 
 # Kinesis
 

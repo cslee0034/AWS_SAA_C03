@@ -28,7 +28,7 @@ AWS관리형 혹은 고객 관리형 KMS 키를 1년마다 자동으로 교체�
 
 ![Secrets_Manager](./pictures/Secrets_Manager.png)
 
-AWS에서 제공하는 비밀 저장 서비스.
+AWS에서 제공하는 암호 저장 서비스.
 
 - X일 마다 교체하는 rotation기능 제공.
 
