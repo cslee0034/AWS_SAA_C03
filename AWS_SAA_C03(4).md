@@ -352,7 +352,7 @@ AWS 내의 Private IPv4 혹은 IPv6를 통해 둘 혹은 그 이상의 VPC를 �
 
 ![VPC_Endpoints](./pictures/VPC_Endpoints.png)
 
-인터넷을 거치지 않고 Private Network를 사용하여 VPC 내부에서 AWS 서비스에 연결하는 서비스.
+!! 인터넷을 거치지 않고 !! Private Network를 사용하여 VPC 내부에서 AWS 서비스에 연결하는 서비스.
 
 - 문제가 생길 경우 VPC 내의 DNS와 라우트 테이블을 확인 해본다.
 
@@ -384,7 +384,7 @@ AWS 내의 Private IPv4 혹은 IPv6를 통해 둘 혹은 그 이상의 VPC를 �
 
 ![Site-to-Site_VPN](./pictures/Site-to-Site_VPN.png)
 
-기업의 데이터 센터와 AWS VPC 간에 안전한 VPN 연결을 설정하는 것을 도와주는 게이트웨이.
+!! 인터넷을 거쳐 !! 기업의 데이터 센터와 AWS VPC 간에 안전한 VPN 연결을 설정하는 것을 도와주는 게이트웨이.
 
 - 주로 AWS Direct Connect와 함께 사용된다.
 
