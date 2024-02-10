@@ -301,9 +301,9 @@ Elastic Block Storage는 EC2에 붙이는 '네트워크' 장치이다 (네트워
 
 - AZ나 Region을 건너 뛰어 Snapshot을 복사할 수 있다.
 
-- archieve tier에 보관하여 75% 정도의 비용을 아낄 수 있다(복구 시간 느림).
+- Archive tier에 보관하여 75% 정도의 비용을 아낄 수 있다(복구 시간 느림).
 
-- n일 후 삭제되도록 recycle bin에 넣을 수 있다.
+- n일 후 삭제되도록 Recycle bin에 넣을 수 있다.
 
 - Fast Snapshot Restore(FSR)을 이용해 곧바로 복구시킬 수 있다.
 
