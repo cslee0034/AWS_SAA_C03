@@ -12,7 +12,7 @@ user에게만 권한을 부여하는 것이 아니라 EC2와 같은 인스턴스
 
 - IAM Role: 그러한 권한을 다른 사용자나 서비스에 임시로 할당하는 메커니즘.
 
-- ex: aws-ec2-role를 생성-> S3-full-access-policy를 해당 role에 포함시킴 -> EC2에 aws-ec2-role 적용
+- ex) aws-ec2-role를 생성-> S3-full-access-policy를 해당 role에 포함시킴 -> EC2에 aws-ec2-role 적용
 
 ## Users
 
