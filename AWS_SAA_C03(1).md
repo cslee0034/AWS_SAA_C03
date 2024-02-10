@@ -75,7 +75,7 @@ Multi Factor Authentication의 약자로, password와 security device를 조합�
 
 ![Organizations](./pictures/Organizations.png)
 
-- 글로벌 서비스
+- 글로벌 서비스.
 
 - Member 계정은 하나의 Organizations에만 속할 수 있다.
 
@@ -183,7 +183,7 @@ EC2 인스턴스에 대한 방화벽 역할을 하는 서비스이다.
 
 ### Savings Plans
 
-1 ~ 3년간 사용량에 대한 약정
+1 ~ 3년간 사용량에 대한 약정.
 
 - 구독과 같은 개념으로 사용자는 미리 정해진 사용량에 대해 할인을 받을 수 있다.
 
