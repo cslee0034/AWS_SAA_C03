@@ -155,15 +155,15 @@ t2medium을 예로 들었을 때
 
 EC2 인스턴스에 대한 방화벽 역할을 하는 서비스이다.
 
-- allow 규칙만 있고, deny 규칙은 없다.
+- Allow 규칙만 있고, Deny 규칙은 없다.
 
-- access port, IP range (IPv4/IPv6), inbound outbound를 규정한다.
+- Access port, IP range (IPv4/IPv6), Inbound, Outbound를 규정한다.
 
 - 여러개의 Instance에 붙일 수 있다.
 
-- VPC, region의 범위로 적용이 제한된다.
+- VPC, Region의 범위로 적용이 제한된다.
 
-- deny에 해당하는 접근은 EC2의 외부에서 차단된다.
+- Deny에 해당하는 접근은 EC2의 외부에서 차단된다.
 
 ## Purchasing options
 
@@ -211,7 +211,7 @@ EC2 인스턴스에 대한 방화벽 역할을 하는 서비스이다.
 
 - 최대 90%까지 할인.
 
-- Spot Fleets라는 서비스를 통해 자동으로 비용에 맞는 spot instance를 요청할 수 있다.
+- Spot Fleets라는 서비스를 통해 자동으로 비용에 맞는 Spot instance를 요청할 수 있다.
 
 ### Dedicated Hosts
 
