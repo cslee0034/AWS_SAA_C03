@@ -24,6 +24,10 @@ AWS의 모든 서비스에 대한 지표를 제공하는 서비스.
 
 - Metric Streams: Amazon CloudWatch에서 생성된 메트릭을 실시간으로 다른 서비스로 전송할 수 있는 기능
 
+## CloutWathch Logs
+
+AWS 리소스와 실행 중인 애플리케이션에서 발생하는 로그를 실시간으로 모니터링하고 저장할 수 있게 해준다.
+
 # EventBridge
 
 ![EventBridge](./pictures/EventBridge.png)
