@@ -401,6 +401,8 @@ JSON 기반의 S3 정책이다.
 
 ### Transfer Acceleration
 
+S3 Transfer Acceleration을 사용하면 S3에서 !! 보내고 받는 !! 데이터를 더 빠르게 전송할 수 있다.
+
 - 파일을 AWS Edge Location으로 전송하고, 이 위치에서 데이터를 대상 지역의 S3 버킷으로 전달하여 전송 속도를 증가시킨다.
 
 - 가장 가까운 Public 인터넷을 통해 Edge Location으로 전송하고 그 뒤 더 빠른 AWS 전용선으로 S3에 업로드 한다.
