@@ -140,6 +140,14 @@ AWS의 독점 기술로, 클라우드에 최적화된 RDB의 일종이다.
 
 - 한 item은 최대 400KB의 용량 제한을 갖는다.
 
+## Point-in-time recovery(PITR)
+
+DynamoDB의 백업 서비스.
+
+- 초 단위로 백업이 가능하다.
+
+- 최대 35일 동안만 데이터를 복원할 수 있다.
+
 # DocumentDB
 
 ![DocumentDB](./pictures/DocumentDB.png)
