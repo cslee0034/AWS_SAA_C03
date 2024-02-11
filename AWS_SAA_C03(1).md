@@ -12,7 +12,7 @@ user에게만 권한을 부여하는 것이 아니라 EC2와 같은 인스턴스
 
 - IAM Role: 그러한 권한을 다른 사용자나 서비스에 임시로 할당하는 메커니즘.
 
-- ex: aws-ec2-role를 생성-> S3-full-access-policy를 해당 role에 포함시킴 -> EC2에 aws-ec2-role 적용
+- ex) aws-ec2-role를 생성-> S3-full-access-policy를 해당 role에 포함시킴 -> EC2에 aws-ec2-role 적용.
 
 ## Users
 
@@ -75,7 +75,7 @@ Multi Factor Authentication의 약자로, password와 security device를 조합�
 
 ![Organizations](./pictures/Organizations.png)
 
-- 글로벌 서비스
+- 글로벌 서비스.
 
 - Member 계정은 하나의 Organizations에만 속할 수 있다.
 
@@ -117,7 +117,7 @@ Multi Factor Authentication의 약자로, password와 security device를 조합�
 
 - Cognito User Pool:
 
-  - 앱 유저를 위한 로그인 서비스
+  - 앱 유저를 위한 로그인 서비스.
 
   - API Gateway와 ALB와 통합된다.
 
@@ -145,25 +145,25 @@ Instance를 실행할 때 한 번만 동작하는 시작 스크립트이다.
 
 t2medium을 예로 들었을 때
 
-- t: 인스턴스의 class(bustable 등의 유형을 나타냄)
+- t: 인스턴스의 class(bustable 등의 유형을 나타냄).
 
-- 3: 인스턴스의 generation(하드웨어의 성능 및 기능에 따른 특정 시기에 출시된 인스턴스 유형)
+- 2: 인스턴스의 generation(하드웨어의 성능 및 기능에 따른 특정 시기에 출시된 인스턴스 유형).
 
-- medium: 인스턴스 class의 크기(CPU, 메모리, 스토리지, 네트워크 성능 등에 따른 차이)
+- medium: 인스턴스 class의 크기(CPU, 메모리, 스토리지, 네트워크 성능 등에 따른 차이.
 
 ## Security Groups
 
 EC2 인스턴스에 대한 방화벽 역할을 하는 서비스이다.
 
-- allow 규칙만 있고, deny 규칙은 없다.
+- Allow 규칙만 있고, Deny 규칙은 없다.
 
-- access port, IP range (IPv4/IPv6), inbound outbound를 규정한다.
+- Access port, IP range (IPv4/IPv6), Inbound, Outbound를 규정한다.
 
 - 여러개의 Instance에 붙일 수 있다.
 
-- VPC, region의 범위로 적용이 제한된다.
+- VPC, Region의 범위로 적용이 제한된다.
 
-- deny에 해당하는 접근은 EC2의 외부에서 차단된다.
+- Deny에 해당하는 접근은 EC2의 외부에서 차단된다.
 
 ## Purchasing options
 
@@ -183,7 +183,7 @@ EC2 인스턴스에 대한 방화벽 역할을 하는 서비스이다.
 
 ### Savings Plans
 
-1 ~ 3년간 사용량에 대한 약정
+1 ~ 3년간 사용량에 대한 약정.
 
 - 구독과 같은 개념으로 사용자는 미리 정해진 사용량에 대해 할인을 받을 수 있다.
 
@@ -211,7 +211,7 @@ EC2 인스턴스에 대한 방화벽 역할을 하는 서비스이다.
 
 - 최대 90%까지 할인.
 
-- Spot Fleets라는 서비스를 통해 자동으로 비용에 맞는 spot instance를 요청할 수 있다.
+- Spot Fleets라는 서비스를 통해 자동으로 비용에 맞는 Spot instance를 요청할 수 있다.
 
 ### Dedicated Hosts
 
@@ -283,7 +283,7 @@ Elastic Block Storage는 EC2에 붙이는 '네트워크' 장치이다 (네트워
 
 - 물리 장치가 아니라 네트워크 장치이기 때문에 latency가 존재한다.
 
-- 기본적으로는 한 번에 한 인스턴스에만 붙일 수 있다
+- 기본적으로는 한 번에 한 인스턴스에만 붙일 수 있다.
 
 - 특정 조건을 만족할 때 multi attach 기능을 통해 하나의 EBS를 어러 개의 인스턴스에 부착할 수도 있고, 하나의 인스턴스에 여러 개의 EBS를 부착할 수도 있다.
 
@@ -301,9 +301,9 @@ Elastic Block Storage는 EC2에 붙이는 '네트워크' 장치이다 (네트워
 
 - AZ나 Region을 건너 뛰어 Snapshot을 복사할 수 있다.
 
-- archieve tier에 보관하여 75% 정도의 비용을 아낄 수 있다(복구 시간 느림).
+- Archive tier에 보관하여 75% 정도의 비용을 아낄 수 있다(복구 시간 느림).
 
-- n일 후 삭제되도록 recycle bin에 넣을 수 있다.
+- n일 후 삭제되도록 Recycle bin에 넣을 수 있다.
 
 - Fast Snapshot Restore(FSR)을 이용해 곧바로 복구시킬 수 있다.
 
@@ -319,13 +319,13 @@ Elastic Block Storage는 EC2에 붙이는 '네트워크' 장치이다 (네트워
 
 ## EBS Multi Attach
 
-1. 하나의 EBS볼륨을 여러 개의 인스턴스에 부착
+1. 하나의 EBS볼륨을 여러 개의 인스턴스에 부착.
 
 - io1/io2과 같은 특정 유형에서만 지원됨.
 
 - 모든 관련 인스턴스는 같은 Region 및 AZ에 있어야 한다.
 
-2. 하나의 인스턴스에 여러 EBS Volume 부착
+2. 하나의 인스턴스에 여러 EBS Volume 부착.
 
 - 인스턴스 유형에 따라 최대 EBS 볼륨 개수가 정해져 있음.
 
@@ -349,7 +349,7 @@ Elastic File System의 약자로 여러 개의 EC2에 mount할 수 있는 manage
 
 - Linux base AMI (POSIX)에서만 사용 가능하다.
 
-- Lustre client와의 직접적 통합 미지원
+- Lustre client와의 직접적 통합 미지원.
 
 - EFS 생성시 암호화 활성화 옵션을 선택하면 유휴 데이터(data at rest)를 KMS를 통해 암호화 된다.
 
@@ -357,9 +357,9 @@ Elastic File System의 약자로 여러 개의 EC2에 mount할 수 있는 manage
 
 ## EFS Storage Class
 
-- Standard: 자주 접근하는 파일용
+- Standard: 자주 접근하는 파일용.
 
-- Infrequent Access(IA): 파일을 검색하는데 비용이 발생하며, 저장 비용은 더 낮다 (90% 이상 절감 가능).
+- Infrequent Access(IA): 파일을 검색하는데 비용이 발생하며, 저장 비용은 더 낮다. (90% 이상 절감 가능)
 
 ## EBS vs EFS
 
@@ -373,7 +373,7 @@ EBS:
 
 - Migration을 위해서 Snapshot 필요.
 
-- EC2 종료 시 안스턴스의 Root EBS도 종료된다.
+- EC2 종료 시 인스턴스의 Root EBS도 종료된다.
 
 EFS:
 
