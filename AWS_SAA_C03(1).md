@@ -87,6 +87,16 @@ Multi Factor Authentication의 약자로, password와 security device를 조합�
 
 - Organizations 내에 계정 생성을 자동화 할 수 있는 API가 있어 계정을 쉽게 생성할 수 있다.
 
+## Service Control Policies(SCP)
+
+조직(organization)이나 조직 단위(organizational units, OUs)에 속한 AWS 계정의 권한을 관리하고 제한하는 데 사용되는 정책.
+
+- JSON 형식으로 작성된다.
+
+- 조직의 root, 개별 organization 단위, 또는 계정에 적용될 수 있다.
+
+- 액세스 제어. 최소 권한 모델 적용. 규정 준수 보장 등의 기능을 한다.
+
 ## IAM Group vs Organization
 
 - AWS Organization은 AWS 계정을 생성하고, 그룹화(OU, Organizational Unit)하고, 정책(SCP, Service Control Policy)을 적용할 수 있다.
