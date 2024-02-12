@@ -124,6 +124,10 @@ AWS의 Content Delivery Network(CDN) 서비스이다.
 
 - Field-Level Encryption: HTTP 폼 필드에 들어있는 개별 데이터를 CloudFront 엣지에서 암호화하는 기능.
 
+## Origin Access Control(OAC)
+
+S3 버킷의 콘텐츠를 CloudFront를 통해서만 접근 가능하게 할 수 있다.
+
 # Global Accelerator
 
 ![Global_Accelerator](./pictures/Global_Accelerator.png)
