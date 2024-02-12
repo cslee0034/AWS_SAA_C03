@@ -52,6 +52,10 @@ Relational Database Service의 약자로 AWS가 관리하는 관계형 데이터
 
 - 스냅샷이 생긴다 -> 다른 AZ에 스냅샷을 복구한다 -> 동기화가 이루어진다.
 
+## RDS Multi-AZ DB Cluster
+
+AZ DB 클러스터 배포는 하나의 AZ에서 읽기-쓰기 트래픽에 쓰이는 기본 인스턴스와 두개의 다른 AZ에서 읽기 트래픽에 쓰이는 스탠바이 인스턴스로 구성된다.
+
 ## RDS Proxy
 
 완전 관리형 데이터베이스 프록시이다.
