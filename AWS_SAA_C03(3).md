@@ -152,6 +152,14 @@ DynamoDB의 백업 서비스.
 
 - 최대 35일 동안만 데이터를 복원할 수 있다.
 
+## Continuous backups
+
+- DynamoDB의 기본 기능으로 서버나 클러스터를 관리할 필요 없이 모든 규모에서 작동한다.
+
+- AWS 리전과 계정들에 지난 35일 중 어떠한 point-of-time에 대한 데이터를 내보낼 수 있게 한다.
+
+- Read capacity나 Production tables ability에 영향을 미치지 않는다.
+
 # DocumentDB
 
 ![DocumentDB](./pictures/DocumentDB.png)
