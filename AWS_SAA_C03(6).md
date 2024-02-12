@@ -122,9 +122,13 @@ Elastic Kubernetes Service의 약자로 AWS에서 제공하는 관리형 Kuberne
 
 ## Provisioned Concurrency
 
-Lambda 함수가 즉시 응답할 수 있도록 미리 warm 상태의 함수 인스턴스를 준비해두는 기능.
+Lambda 함수가 즉시 응답할 수 있도록 미리 Warm 상태의 함수 인스턴스를 준비해두는 기능.
 
 - 추가 요금이 부과된다.
+
+## Reserved concurrency
+
+특정 함수에 대해 동시 실행 수를 예약하는 기능.
 
 ## Lambda Limites
 
