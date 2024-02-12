@@ -517,6 +517,8 @@ FTP 프로토콜을 사용하여 Amazon S3 또는 Amazon EFS와의 파일 전송
 
 - SFTP 프로토콜 지원 (Secure File Transfer Protocol)
 
+- AS2 프로토콜 지원 (Applicability Name 2)
+
 # DataSync
 
 ![DataSync](./pictures/DataSync.png)
