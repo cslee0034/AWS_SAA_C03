@@ -459,6 +459,12 @@ S3 버킷 내에 여러 버전을 유지하는 기능.
 
 - MFA 삭제 활성화 가능
 
+## S3 Lifecycle
+
+더 이상 필요하지 않은 데이터를 자동으로 삭제할 수 있게 하는 기능.
+
+- Versioning과 함께 쓰면 특정 버전의 오브젝트를 자동으로 삭제하거나, 이전 버전을 더 저렴한 스토리지 클래스로 이동시킬 수 있다.
+
 # Snow Family
 
 ![Snowcone](./pictures/Snowcone.png)
