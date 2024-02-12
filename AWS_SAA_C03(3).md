@@ -128,8 +128,6 @@ AWS의 독점 기술로, 클라우드에 최적화된 RDB의 일종이다.
 
 - attribute를 이용하여 일정 기간 이후 자동으로 삭제되는 TTL 기능을 이용할 수 있다.
 
-- DynamoDB와 호환 되는 DAX cluster를 read cache로 사용할 수 있다. microsecond read latency를 가짐. (DynamoDB Accelerator, 완전 관리형 캐시 서비스)
-
 - 보안, 인증, 인가 모두 IAM을 통해 이루어짐.
 
 - DynamoDB Streams로 테이블의 변경사항에 대한 이벤트를 처리할 수 있다.
@@ -139,6 +137,12 @@ AWS의 독점 기술로, 클라우드에 최적화된 RDB의 일종이다.
 - 빠르게 변하는, 유연한 스키마에 적합하다.
 
 - 한 item은 최대 400KB의 용량 제한을 갖는다.
+
+## DynamoDB Accelerator(DAX)
+
+DynamoDB용 인 메모리 완전 관리형 캐시 서비스.
+
+- microsecond read latency를 가짐. (읽기 속도가 빨라진다)
 
 ## Point-in-time recovery(PITR)
 
