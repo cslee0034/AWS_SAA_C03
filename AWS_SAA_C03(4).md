@@ -388,6 +388,16 @@ AWS의 서버리스 서비스로, REST API를 생성할 수 있다.
 
 - 접근을 정의하기 위해 resource policy를 사용한다.
 
+## Custom Domain Name
+
+API GW에 사용자 정의 도메인 이름을 설정할 수 있게 해준다.
+
+- Route53 등의 DNS 제공 업체를 통해 도메인을 미리 등록해야 한다.
+
+- API GW 콘솔에서 ACM을 통해 발급받은 인증서를 이 도메인 이름에 연결한다.
+
+- 도메인의 DNS 설정에서 CNAME 레코드를 생성해서 사용자 정의 도메인의 이름이 API GW를 가리키도록 한다.
+
 # IGW
 
 ![IGW](./pictures/IGW.png)
