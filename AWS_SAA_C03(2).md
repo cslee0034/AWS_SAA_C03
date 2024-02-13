@@ -82,6 +82,8 @@ VPC끼리의 통신에 사용된다.
 
 - Target Group은 EC2 혹은 IP 주소이다.
 
+- Gateway Load Balancer Endpoint를 통해 VPC간 간편한 연결을 지원한다.
+
 ## Sticky session
 
 같은 클라이언트가 항상 로드 밸런서 뒤의 동일한 인스턴스로 리디렉션되도록 쿠키를 사용해서 스티키 세션을 구현할 수 있다.
