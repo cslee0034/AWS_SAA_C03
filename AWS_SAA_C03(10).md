@@ -60,6 +60,8 @@ AWS Certificate Manager의 약자로 AWS에서 제공하는 인증서 관리 서
 
 - 외부 Certificate Authority (CA)는 자동으로 Rotate할 수 없다.
 
+- Region 별로 관리된다.
+
 # Network Firewall
 
 ![Network_Firewall](./pictures/Network_Firewall.png)
