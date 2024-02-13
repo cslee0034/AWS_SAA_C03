@@ -154,110 +154,6 @@ S3 버킷의 콘텐츠를 CloudFront를 통해서만 접근 가능하게 할 수
 
 - CloudFront는 캐싱 기능 사용. Global Accelerator는 캐싱을 사용하지 않는다.
 
-# API Gateway
-
-![API_Gateway](./pictures/API_Gateway.png)
-
-AWS의 서버리스 서비스로, REST API를 생성할 수 있다.
-
-- 단순히 HTTP 앤드포인트가 아니라 인증, 사용량 계획, 개발 단계 등의 기능을 제공한다.
-
-- Lambda와 조합하면 인프라가 필요 없는 Serverless 어플리케이션을 구축할 수 있다.
-
-- API 버전 핸들링이 가능하다.
-
-- dev, test, prod 등의 환경을 핸들링 가능하다.
-
-- 보안 관련 핸들링이 가능하다.
-
-- 요청을 쓰로틀링 하는 것이 가능하다.
-
-- Swagger나 Open API를 통해 정의서를 가져오거나 내보낼 수 있다.
-
-- 요청과 응답을 가공할 수 있다.
-
-- API 응답을 캐싱이 가능하다.
-
-- 어떠한 AWS 서비스든 직접 접근하도록 할 수 있다.
-
-- API 호출을 기준으로 비용 청구.
-
-## API Gateway EndPoint
-
-1. Edge-Optimized EndPoint
-
-   - 전 세계 어디서나 사용자에게 낮은 지연 시간을 제공한다.
-
-   - 글로벌 서비스에 유리하다.
-
-2. 특정 AWS 리전 내에서만 API 트래픽을 처리한다.
-
-   - 지역별 데이터 규정 준수에 적합하다.
-
-## Endpoint Types
-
-### Edge-Optimized (default)
-
-- 글로벌 클라이언트를 위한 서비스.
-
-- CloudFront Edge locations를 통해 요청이 가능하다.
-
-- API Gateway는 여전히 한 지역에 존재한다.
-
-### Regional
-
-- 같은 지역에 있는 클라이언트를 위한 서비스.
-
-- 수동으로 CloudFront와 연동할 수 있다.
-
-### Private
-
-- VPC 내부에서만 접근이 가능하고, intergace VPC endpoint (ENI)를 사용한다.
-
-- 접근을 정의하기 위해 resource policy를 사용한다.
-
-# IGW
-
-![IGW](./pictures/IGW.png)
-
-Internet Gateway의 약자. VPC와 인터넷 사이에서 트래픽을 라우팅 하는데 사용된다.
-
-- VPC와 IGW는 1:1로 매칭된다.
-
-- IGW만으로는 작동하지 않고 라우팅 데이블을 편집해야 작동한다.
-
-# Egress-only Internet Gateway
-
-![IGW](./pictures/IGW.png)
-
-VPC (Virtual Private Cloud) 구성 요소 중 하나.
-
-- IPv6 주소를 사용한다.
-
-- 나가는 (egress) 트래픽만 허용.
-
-- 인터넷에서 VPC로 들어오는 (ingress) 트래픽은 차단.
-
-- VPC에서 시작된 연결에 대해서는 응답 트래픽이 들어올 수 있도록 허용하지만, 외부에서 시작된 새로운 연결은 차단. (상태 기반 라우팅)
-
-# NAT Gateway
-
-![NAT_Gateway](./pictures/NAT_Gateway.png)
-
-프라이빗 서브넷에서 인터넷 연결을 가능하게 하는 게이트웨이.
-
-- IGW를 필요로 한다 (Private Subnet => NATGW => IGW)
-
-- 동일한 서브넷의 EC2 인스턴스에서는 사용할 수 없다.
-
-- 특정 AZ에 생성되며 EIP를 사용한다.
-
-- 사용량 및 대역폭에 대해 시간당 비용을 지불한다.
-
-## NAT Instance
-
-Network Address Translation을 관리하는 인스턴스. (deprecated)
-
 # VPC
 
 ![VPC](./pictures/VPC.png)
@@ -390,19 +286,13 @@ Amazon VPC를 AWS 서비스와 VPC 엔드포인트 서비스에 연결하는 가
 
 - 비용: 시간당 요금과 데이터 처리 요금이 발생할 수 있다.
 
-## Virtual Private Gateway
+## Site to Site VPN
 
-![VPN_Gateway](./pictures/VPN_Gateway.png)
+![Site_To_Site_VPN](./pictures/Site_To_Site_VPN.png)
 
-!! 인터넷을 거쳐 !! !! 기업의 데이터 센터와 AWS VPC 간에 안전한 VPN 연결 !! 을 설정하는 것을 도와주는 게이트웨이.
+기업이나 조직의 본사와 지사, 또는 데이터 센터와 클라우드 리소스 간의 안전한 연결을 위해 사용된다.
 
-- 주로 AWS Direct Connect와 함께 사용된다.
-
-- 온프레미스 환경과 AWS 클라우드 간에 전용의 안전한 연결을 제공한다.
-
-### Site-to-Site VPN
-
-Virtual Private Gateway (VGW) 서비스. 기업이나 조직의 본사와 지사, 또는 데이터 센터와 클라우드 리소스 간의 안전한 연결을 위해 사용된다.
+- Virtual Private Gateway 혹은 Transit Gateway를 사용한다.
 
 - 두 개 이상의 서로 다른 위치(사이트)의 네트워크를 연결하는 VPN(Virtual Private Network) 방식을 지칭한다.
 
@@ -432,6 +322,124 @@ Virtual Private Gateway (VGW) 서비스. 기업이나 조직의 본사와 지사
 
 - VPN 연결이므로 공용 인터넷을 통과한다.
 
+# Gateway
+
+컴퓨터 네트워크에서 다른 네트워크로 데이터를 전송하기 위한 네트워크 포인트 또는 노드.
+
+# API Gateway
+
+![API_Gateway](./pictures/API_Gateway.png)
+
+AWS의 서버리스 서비스로, REST API를 생성할 수 있다.
+
+- 단순히 HTTP 앤드포인트가 아니라 인증, 사용량 계획, 개발 단계 등의 기능을 제공한다.
+
+- Lambda와 조합하면 인프라가 필요 없는 Serverless 어플리케이션을 구축할 수 있다.
+
+- API 버전 핸들링이 가능하다.
+
+- dev, test, prod 등의 환경을 핸들링 가능하다.
+
+- 보안 관련 핸들링이 가능하다.
+
+- 요청을 쓰로틀링 하는 것이 가능하다.
+
+- Swagger나 Open API를 통해 정의서를 가져오거나 내보낼 수 있다.
+
+- 요청과 응답을 가공할 수 있다.
+
+- API 응답을 캐싱이 가능하다.
+
+- 어떠한 AWS 서비스든 직접 접근하도록 할 수 있다.
+
+- API 호출을 기준으로 비용 청구.
+
+## API Gateway EndPoint
+
+1. Edge-Optimized EndPoint
+
+   - 전 세계 어디서나 사용자에게 낮은 지연 시간을 제공한다.
+
+   - 글로벌 서비스에 유리하다.
+
+2. 특정 AWS 리전 내에서만 API 트래픽을 처리한다.
+
+   - 지역별 데이터 규정 준수에 적합하다.
+
+## Endpoint Types
+
+### Edge-Optimized (default)
+
+- 글로벌 클라이언트를 위한 서비스.
+
+- CloudFront Edge locations를 통해 요청이 가능하다.
+
+- API Gateway는 여전히 한 지역에 존재한다.
+
+### Regional
+
+- 같은 지역에 있는 클라이언트를 위한 서비스.
+
+- 수동으로 CloudFront와 연동할 수 있다.
+
+### Private
+
+- VPC 내부에서만 접근이 가능하고, intergace VPC endpoint (ENI)를 사용한다.
+
+- 접근을 정의하기 위해 resource policy를 사용한다.
+
+# IGW
+
+![IGW](./pictures/IGW.png)
+
+Internet Gateway의 약자. VPC와 인터넷 사이에서 트래픽을 라우팅 하는데 사용된다.
+
+- VPC와 IGW는 1:1로 매칭된다.
+
+- IGW만으로는 작동하지 않고 라우팅 데이블을 편집해야 작동한다.
+
+# Egress-only Internet Gateway
+
+![IGW](./pictures/IGW.png)
+
+VPC (Virtual Private Cloud) 구성 요소 중 하나.
+
+- IPv6 주소를 사용한다.
+
+- 나가는 (egress) 트래픽만 허용.
+
+- 인터넷에서 VPC로 들어오는 (ingress) 트래픽은 차단.
+
+- VPC에서 시작된 연결에 대해서는 응답 트래픽이 들어올 수 있도록 허용하지만, 외부에서 시작된 새로운 연결은 차단. (상태 기반 라우팅)
+
+# NAT Gateway
+
+![NAT_Gateway](./pictures/NAT_Gateway.png)
+
+프라이빗 서브넷에서 인터넷 연결을 가능하게 하는 게이트웨이.
+
+- IGW를 필요로 한다 (Private Subnet => NATGW => IGW)
+
+- 동일한 서브넷의 EC2 인스턴스에서는 사용할 수 없다.
+
+- 특정 AZ에 생성되며 EIP를 사용한다.
+
+- 사용량 및 대역폭에 대해 시간당 비용을 지불한다.
+
+## NAT Instance
+
+Network Address Translation을 관리하는 인스턴스. (deprecated)
+
+## Virtual Private Gateway
+
+![VPN_Gateway](./pictures/VPN_Gateway.png)
+
+!! 인터넷을 거쳐 !! !! 기업의 데이터 센터와 AWS VPC 간에 안전한 VPN 연결 !! 을 설정하는 것을 도와주는 게이트웨이.
+
+- 주로 AWS Direct Connect와 함께 사용된다.
+
+- 온프레미스 환경과 AWS 클라우드 간에 전용의 안전한 연결을 제공한다.
+
 ## Transit Gateway (TGW)
 
 ![Transit_Gateway](./pictures/Transit_Gateway.png)
@@ -449,3 +457,29 @@ Virtual Private Gateway (VGW) 서비스. 기업이나 조직의 본사와 지사
 - 허브 앤 스포크 모델을 사용한다. (모든 네트워크 자원이 Transit Gateway(허브)에 연결되며, 이 허브를 통해 다른 네트워크(스포크)와 통신)
 
 - 특정 트래픽 검사 기능 지원하지 않는다.
+
+## Storage Gateway
+
+![Storage_Gateway](./pictures/Storage_Gateway.png)
+
+on-premises data와 cloud data 사이의 가교 역할을 하는 서비스.
+
+구성된 S3 버킷은 NFS와 SMB protocol을 사용하여 액세스 할 수 있다.
+
+로컬 캐시를 지원하여 자주 사용하는 서비스에 대한 빠른 엑세스를 제공한다.
+
+### File gateway
+
+NFS/SMB 프로토콜을 사용하여 Amazon S3에서 객체를 저장 및 검색한다.
+
+### Volume gateway
+
+iSCSI를 사용한다. 캐싱 및 저장의 용도로 EBS를 사용한다. 또힌 Amazon S3에 백업을 저장한다. (S3에 직접적 검색 등의 기능 없다)
+
+### Tape gateway
+
+클라우드 기반 가상 테이프 스토리지를 통해 데이터 백업 기능.
+
+### FSx File Gateway
+
+온프레미스 환경에 배치되어 FSx for Windows File Server 인스턴스에 대한 로컬 캐시를 제공한다.

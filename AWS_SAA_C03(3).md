@@ -501,10 +501,6 @@ AWS가 제공하는 완전 관리형 파일 스토리지 서비스로, Windows �
 
 완전 관리형 파일 시스템으로, 고성능 컴퓨팅 워크로드에 최적화 되어 있으다. 빠른 데이터 처리와 대규모 스토리지 작업을 지원한다.
 
-## FSx File Gateway
-
-온프레미스 환경에 배치되어 FSx for Windows File Server 인스턴스에 대한 로컬 캐시를 제공한다.
-
 ## FSx for NetApp ONTAP
 
 ONTAP 파일 시스템을 기반으로 하는 완전 관리형 파일 스토리지 서비스.
@@ -512,22 +508,6 @@ ONTAP 파일 시스템을 기반으로 하는 완전 관리형 파일 스토리�
 - NFS, SMB, iSCSI 등 다양한 파일 공유 프로토콜을 지원한다.
 
 - 다양한 운영 체제와 애플리케이션에서 사용할 수 있다. (리눅스, 윈도우, VMware 등 다양한 환경에서의 파일 공유가 가능)
-
-## Storage Gateway
-
-![Storage_Gateway](./pictures/Storage_Gateway.png)
-
-on-premises data와 cloud data 사이의 가교 역할을 하는 서비스.
-
-구성된 S3 버킷은 NFS와 SMB protocol을 사용하여 액세스 할 수 있다.
-
-로컬 캐시를 지원하여 자주 사용하는 서비스에 대한 빠른 엑세스를 제공한다.
-
-- File gateway: NFS/SMB 프로토콜을 사용하여 Amazon S3에서 객체를 저장 및 검색한다.
-
-- Volume gateway: iSCSI를 사용한다. 캐싱 및 저장의 용도로 EBS를 사용한다. 또힌 Amazon S3에 백업을 저장한다. (S3에 직접적 검색 등의 기능 없다)
-
-- Tape gateway: 클라우드 기반 가상 테이프 스토리지를 통해 데이터 백업 기능.
 
 # Transfer Family
 
