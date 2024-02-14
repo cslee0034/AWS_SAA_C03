@@ -24,6 +24,14 @@ AWS의 모든 서비스에 대한 지표를 제공하는 서비스.
 
 - Metric Streams: Amazon CloudWatch에서 생성된 메트릭을 실시간으로 다른 서비스로 전송할 수 있는 기능
 
+## Simple scaling policy
+
+특정 CloudWatch 경보 조건(예: CPU 사용률)이 충족될 때 인스턴스 수를 조정하는 기본적인 Auto Scaling 정책.
+
+## Target tracking policy
+
+지정된 지표(예: CPU 사용률)가 정해진 목표값을 유지하도록 인스턴스 수를 자동으로 조정하는 지능형 Auto Scaling 정책.
+
 ## CloutWathch Logs
 
 AWS 리소스와 실행 중인 애플리케이션에서 발생하는 로그를 실시간으로 모니터링하고 저장할 수 있게 해준다.
