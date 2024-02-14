@@ -24,6 +24,12 @@ AWS관리형 혹은 고객 관리형 KMS 키를 1년마다 자동으로 교체�
 
 - 각 다중 지역 키는 독립적으로 관리된다. (전역 서비스 x, 기본 키 + 복제본 구조)
 
+## KMS vs SSE-S3
+
+SSE-S3는 key rotation 주기를 사용자가 설정할 수 없다.
+
+SSE-KMS 보다 SSE-S3가 더 오버헤드가 작다. (SSE-S3의 키는 S3에 의해 자동으로 생성되고 업로드 시 데이터에 적용되며 추가 작업이 필요하지 않다)
+
 # Secrets Manager
 
 ![Secrets_Manager](./pictures/Secrets_Manager.png)
