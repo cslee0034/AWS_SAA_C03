@@ -569,7 +569,7 @@ FTP 프로토콜을 사용하여 Amazon S3 또는 Amazon EFS와의 파일 전송
 
 중앙 집중화된 백업 서비스로 AWS 환경 내의 다양한 서비스에 대한 데이터 백업, 복원, 정책 기반 관리를 간소화한다.
 
-- EC2, EBS, EFS, FSx, RDS,DynamoDB, S3, Storage Gateway 볼륨등을 백업할 수 있다.
+- EC2, EBS, EFS, FSx, RDS, DynamoDB, S3, Storage Gateway 볼륨등을 백업할 수 있다.
 
 - 자동 백업 및 복원이 가능하다.
 
