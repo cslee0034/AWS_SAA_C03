@@ -200,6 +200,8 @@ DynamoDB의 백업 서비스.
 
 - 어플리케이션을 stateless로 만드는데 도움이 된다.
 
+- Multi AZ와 Auto-Failover 기능이 내장되어 있다.
+
 # Neptune
 
 ![Neptune](./pictures/Neptune.png)
