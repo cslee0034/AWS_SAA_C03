@@ -140,8 +140,8 @@ Auto Scaling Group의 약자로 수요에 따라 자동으로 인스턴스를 �
 
 ## Scaling
 
-- simple scaling policy: 특정 CloudWatch 경보 조건(예: CPU 사용률)이 충족될 때 인스턴스 수를 조정하는 기본적인 Auto Scaling 정책.
+- Simple scaling policy: 특정 CloudWatch 경보 조건(예: CPU 사용률)이 충족될 때 인스턴스 수를 조정하는 기본적인 Auto Scaling 정책.
 
-- target tracking policy: 지정된 지표(예: CPU 사용률)가 정해진 목표값을 유지하도록 인스턴스 수를 자동으로 조정하는 지능형 Auto Scaling 정책.
+- Target tracking policy: 지정된 지표(예: CPU 사용률)가 정해진 목표값을 유지하도록 인스턴스 수를 자동으로 조정하는 지능형 Auto Scaling 정책.
 
-- scheduled scaling actions: 특정 시간에 맞춰 Auto Scaling 그룹의 인스턴스 수를 미리 정해진 계획에 따라 조정하는 정책.
+- Scheduled scaling actions: 특정 시간에 맞춰 Auto Scaling 그룹의 인스턴스 수를 미리 정해진 계획에 따라 조정하는 정책.
