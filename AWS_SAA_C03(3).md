@@ -92,6 +92,8 @@ AWS의 독점 기술로, 클라우드에 최적화된 RDB의 일종이다.
 
 - 3개의 AZ에 걸쳐 6개의 복제본에 저장된다.
 
+- automated backup은 최대 35일 까지 저장된다.
+
 ## Aurora Replicas
 
 - Write Endpoint와 ReadEndpoint를 통해 읽기와 쓰기를 수행하며, 자동으로 스케일링 된다.
