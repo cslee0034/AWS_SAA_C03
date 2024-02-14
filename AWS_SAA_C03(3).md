@@ -258,6 +258,18 @@ Quantum Ledger Database의 약자로 금융 트랜잭션 원장을 기록하는 
 
 - 전송중 및 저장 중 암호화 된다.
 
+# Database Migration Service(DMS)
+
+관계형 데이터베이스, 데이터 웨어하우스, NoSQL 데이터베이스 및 기타 유형의 데이터 스토어를 마이그레이션할 수 있는 서비스.
+
+- 소스 데이터 스토어를 검색하고 변환한 뒤 데이터를 마이그레이션할 수 있다.
+
+- 데이터 복제 도중 데이터베이스에 대한 접근을 지원한다.
+
+## DMS Ongoing replication task
+
+DMS의 설정으로 데이터베이스의 지속적 동기화를 지원한다.
+
 # S3
 
 ![S3](./pictures/S3.png)
