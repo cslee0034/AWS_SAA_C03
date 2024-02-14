@@ -34,7 +34,7 @@ Relational Database Service의 약자로 AWS가 관리하는 관계형 데이터
 
 - 단일 AZ, 교차 AZ 모두 가능하다.
 
-- 비동기적으로 Eventual Consistency를 달성한다.
+- 비동기적(asynchronous)으로 Eventual Consistency를 달성한다.
 
 - 복제본을 그냥 DB로 승격시킬 수 있다.
 
@@ -49,6 +49,8 @@ Relational Database Service의 약자로 AWS가 관리하는 관계형 데이터
 - 하나의 DNS name으로 접근 가능하다.
 
 - downtime이 0이다. (DB를 멈출 필요가 없다)
+
+- 동기적(synchronous)으로 복제된다.
 
 - 스냅샷이 생긴다 -> 다른 AZ에 스냅샷을 복구한다 -> 동기화가 이루어진다.
 
