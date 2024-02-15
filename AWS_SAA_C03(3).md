@@ -565,6 +565,8 @@ FTP 프로토콜을 사용하여 Amazon S3 또는 Amazon EFS와의 파일 전송
 
 - 파일 권한 및 메타데이터가 보존된다.
 
+- 사용 대역폭을 조정할 수 있다.
+
 # Backup
 
 ![Backup](./pictures/Backup.png)
