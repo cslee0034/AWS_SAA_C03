@@ -148,7 +148,7 @@ AWS의 독점 기술로, 클라우드에 최적화된 RDB의 일종이다.
 
 - DynamoDB Streams로 테이블의 변경사항에 대한 이벤트를 처리할 수 있다.
 
-- Global Table로 active-active 향태의 다중 리전 설정을 할 수 있다.
+- Global Table로 active-active 형태의 다중 리전 설정을 할 수 있다.
 
 - 빠르게 변하는, 유연한 스키마에 적합하다.
 
