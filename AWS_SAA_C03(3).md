@@ -192,15 +192,13 @@ DynamoDB의 백업 서비스.
 
 관리형 Redis 또는 Memcached이다.
 
-- MongoDB와 동일하다.
-
 - 캐시는 뛰어난 성능의 인메모리 데이터베이스이다.
 
 - 읽기에 대한 데이터베이스의 부하를 줄인다.
 
 - 어플리케이션을 stateless로 만드는데 도움이 된다.
 
-- Multi AZ와 Auto-Failover 기능이 내장되어 있다.
+- ElastiCache Redis: Multi AZ와 Auto-Failover 기능이 내장되어 있다.
 
 # Neptune
 
