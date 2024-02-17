@@ -16,7 +16,7 @@ Relational Database Service의 약자로 AWS가 관리하는 관계형 데이터
 
 - 다중 리전에서 활용하기 위해서는 Read Replica를 사용해야 한다.
 
-- EBS의 위에서 동작한다.
+- EBS를 베이스로 해서 동작한다.
 
 - SSH 접속이 불가능하다.
 
