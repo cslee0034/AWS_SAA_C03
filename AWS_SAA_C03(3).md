@@ -58,6 +58,8 @@ Relational Database Service의 약자로 AWS가 관리하는 관계형 데이터
 
 AZ DB 클러스터 배포는 하나의 AZ에서 읽기-쓰기 트래픽에 쓰이는 기본 인스턴스와 두개의 다른 AZ에서 읽기 트래픽에 쓰이는 스탠바이 인스턴스로 구성된다.
 
+- 다음 엔진에서 사용이 불가능: MariaDB용 RDS, Oracle용 RDS, SQL Server용 RDS
+
 ## RDS Proxy
 
 완전 관리형 데이터베이스 프록시이다.
@@ -148,7 +150,7 @@ AWS의 독점 기술로, 클라우드에 최적화된 RDB의 일종이다.
 
 - DynamoDB Streams로 테이블의 변경사항에 대한 이벤트를 처리할 수 있다.
 
-- Global Table로 active-active 향태의 다중 리전 설정을 할 수 있다.
+- Global Table로 active-active 형태의 다중 리전 설정을 할 수 있다.
 
 - 빠르게 변하는, 유연한 스키마에 적합하다.
 
@@ -192,15 +194,13 @@ DynamoDB의 백업 서비스.
 
 관리형 Redis 또는 Memcached이다.
 
-- MongoDB와 동일하다.
-
 - 캐시는 뛰어난 성능의 인메모리 데이터베이스이다.
 
 - 읽기에 대한 데이터베이스의 부하를 줄인다.
 
 - 어플리케이션을 stateless로 만드는데 도움이 된다.
 
-- Multi AZ와 Auto-Failover 기능이 내장되어 있다.
+- ElastiCache Redis: Multi AZ와 Auto-Failover 기능이 내장되어 있다.
 
 # Neptune
 
@@ -426,6 +426,8 @@ JSON 기반의 S3 정책이다.
 - 비용: 작은 월별 모니터링 및 자동 계층 이동 비용이 든다.
 
 - Frequent Access tier(기본형) -> Infrequent Access tier -> Archive Instant Access tier -> Archive Access tier -> Deep Archive Access tier
+
+- 날짜를 기반으로 변경하도록 할 수 없다.
 
 ## Performance
 
