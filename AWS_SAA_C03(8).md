@@ -22,7 +22,7 @@ PostgreSQL을 기반으로 하는 OLAP(Online Analytical Processing).
 
 - Columnar storage이다. (row base아님)
 
-- SQL 기반이다.
+- SQL을 기반으로 한다.
 
 - Fine-grained Row-Level Security(RLS) access control을 제공한다.
 
