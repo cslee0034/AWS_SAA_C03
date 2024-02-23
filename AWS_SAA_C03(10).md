@@ -36,7 +36,7 @@ SSE-KMS 보다 SSE-S3가 더 오버헤드가 작다. (SSE-S3의 키는 S3에 의
 
 AWS에서 제공하는 암호 저장 서비스.
 
-- X일 마다 교체하는 rotation기능 제공.
+- N일 마다 교체하는 rotation기능 제공.
 
 - Lambda를 사용하여 암호를 rotation시 자동으로 생성 가능하다.
 
