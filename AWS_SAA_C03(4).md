@@ -442,7 +442,7 @@ VPC (Virtual Private Cloud) 구성 요소 중 하나.
 
 Network Address Translation을 관리하는 인스턴스. (deprecated)
 
-## Virtual Private Gateway
+# Virtual Private Gateway
 
 ![VPN_Gateway](./pictures/VPN_Gateway.png)
 
@@ -452,7 +452,7 @@ Network Address Translation을 관리하는 인스턴스. (deprecated)
 
 - 온프레미스 환경과 AWS 클라우드 간에 전용의 안전한 연결을 제공한다.
 
-## Transit Gateway (TGW)
+# Transit Gateway (TGW)
 
 ![Transit_Gateway](./pictures/Transit_Gateway.png)
 
@@ -470,7 +470,7 @@ Network Address Translation을 관리하는 인스턴스. (deprecated)
 
 - 특정 트래픽 검사 기능 지원하지 않는다.
 
-## Storage Gateway
+# Storage Gateway
 
 ![Storage_Gateway](./pictures/Storage_Gateway.png)
 
@@ -480,18 +480,18 @@ on-premises data와 cloud data 사이의 가교 역할을 하는 서비스.
 
 로컬 캐시를 지원하여 자주 사용하는 서비스에 대한 빠른 엑세스를 제공한다.
 
-### File gateway
+## File gateway
 
 NFS/SMB 프로토콜을 사용하여 Amazon S3에서 객체를 저장 및 검색한다.
 
-### Volume gateway
+## Volume gateway
 
 iSCSI를 사용한다. 캐싱 및 저장의 용도로 EBS를 사용한다. 또힌 Amazon S3에 백업을 저장한다. (S3에 직접적 검색 등의 기능 없다)
 
-### Tape gateway
+## Tape gateway
 
 클라우드 기반 가상 테이프 스토리지를 통해 데이터 백업 기능.
 
-### FSx File Gateway
+## FSx File Gateway
 
 온프레미스 환경에 배치되어 FSx for Windows File Server 인스턴스에 대한 로컬 캐시를 제공한다.
